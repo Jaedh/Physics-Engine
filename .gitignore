@@ -1,0 +1,16 @@
+# Build artifacts
+/build/
+/out/
+
+# vcpkg
+vcpkg_installed/
+
+# IDE
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# OS
+Thumbs.db
+.DS_Store

@@ -2,13 +2,9 @@ add_executable(ball-sim
     src/main.cpp
 )
 
-target_link_libraries(ball-sim
-    PRIVATE
-        glfw
-        glad::glad
-        opengl32
-        # physics_core   # uncomment once core/ is switched to STATIC and main.cpp uses it
-        # render_gl      # uncomment once render/ is switched to STATIC and main.cpp uses it
+target_link_libraries(ball-sim PRIVATE
+    core
+    render
 )
 
 install(TARGETS ball-sim RUNTIME DESTINATION bin)

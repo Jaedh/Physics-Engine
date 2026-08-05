@@ -1,6 +1,25 @@
+#include "render/Window.h"
+#include "render/Shader.h"
+#include "render/CircleRenderer.h"
+#include "render/DebugUI.h"
+
+#include "core/World.h"
+#include "core/math/CircleGeometry.hpp"
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
+
+
+// #include "App.h"
+
+// Add a json list list to outline all the app prameters and settings  
+
+// int main() {
+//     ball_sim::App app(800, 600, "Ball Sim");
+//     app.run();
+//     return 0;
+// }
+
 
 namespace {
 
@@ -10,135 +29,80 @@ constexpr int kWindowHeight = 600;
 const char* kVertexShaderSource = R"(
     #version 460 core
     layout (location = 0) in vec3 aPos;
+    uniform vec2 uOffset;
     void main() {
-        gl_Position = vec4(aPos, 1.0);
+        gl_Position = vec4(aPos.x + uOffset.x, aPos.y + uOffset.y, aPos.z, 1.0);
     }
 )";
 
 const char* kFragmentShaderSource = R"(
     #version 460 core
     out vec4 FragColor;
+    uniform vec4 uColor; // Recieves color from Ball.h
+    
     void main() {
-        FragColor = vec4(1.0, 0.5, 0.2, 1.0); // Orange
+        FragColor = uColor;
     }
 )";
-
-void processInput(GLFWwindow* window) {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, true);
-    }
-}
-
-void framebufferSizeCallback(GLFWwindow*, int width, int height) {
-    glViewport(0, 0, width, height);
-}
-
-GLuint compileShader(GLenum type, const char* source) {
-    GLuint shader = glCreateShader(type);
-    glShaderSource(shader, 1, &source, nullptr);
-    glCompileShader(shader);
-
-    GLint success = GL_FALSE;
-    glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-    if (!success) {
-        char log[512];
-        glGetShaderInfoLog(shader, sizeof(log), nullptr, log);
-        std::cerr << "Shader compile error ("
-                   << (type == GL_VERTEX_SHADER ? "vertex" : "fragment") << "):\n"
-                   << log << std::endl;
-    }
-    return shader;
-}
-
-GLuint linkProgram(GLuint vertexShader, GLuint fragmentShader) {
-    GLuint program = glCreateProgram();
-    glAttachShader(program, vertexShader);
-    glAttachShader(program, fragmentShader);
-    glLinkProgram(program);
-
-    GLint success = GL_FALSE;
-    glGetProgramiv(program, GL_LINK_STATUS, &success);
-    if (!success) {
-        char log[512];
-        glGetProgramInfoLog(program, sizeof(log), nullptr, log);
-        std::cerr << "Shader link error:\n" << log << std::endl;
-    }
-    return program;
-}
 
 } // namespace
 
 int main() {
-    if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW\n";
-        return -1;
-    }
+    // Initialize windowing system, OpenGL 4.6 context, and GLAD driver bindings
+    render::Window window(kWindowWidth, kWindowHeight, "Ball Sim");
+    if (!window.isValid()) return -1;
 
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    // Compile shader pipeline and initialize the ImGui debug overlay wrapper
+    render::Shader shader(kVertexShaderSource, kFragmentShaderSource);
+    render::DebugUI debugUI(window);
 
-    GLFWwindow* window = glfwCreateWindow(kWindowWidth, kWindowHeight, "Ball Sim", nullptr, nullptr);
-    if (!window) {
-        std::cerr << "Failed to create GLFW window\n";
-        glfwTerminate();
-        return -1;
-    }
-    glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
+    // Initialize core simulation state and spawn an initial ball
+    core::World world;
+    world.addBall(core::Ball{});
 
-    if (!gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress))) {
-        std::cerr << "Failed to initialize GLAD\n";
-        glfwDestroyWindow(window);
-        glfwTerminate();
-        return -1;
-    }
+    // Compute circle geometry points and upload vertex data to GPU memory (VBO/VAO)
+    std::vector<float> circleData = core::math::generateCircleVertices(0.0f, 0.0f, 0.2f, 64);
+    render::CircleRenderer circleRenderer(circleData);
 
-    std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
+    // Setup high-precision frame timing for time-delta updates
+    float lastFrameTime = static_cast<float>(glfwGetTime());
 
-    GLuint vertexShader = compileShader(GL_VERTEX_SHADER, kVertexShaderSource);
-    GLuint fragmentShader = compileShader(GL_FRAGMENT_SHADER, kFragmentShaderSource);
-    GLuint shaderProgram = linkProgram(vertexShader, fragmentShader);
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
+    // Main application render and update loop
+    while (!window.shouldClose()) {
+        // Calculate frame delta time in seconds
+        float currentFrameTime = static_cast<float>(glfwGetTime());
+        float deltaTime = currentFrameTime - lastFrameTime;
+        lastFrameTime = currentFrameTime;
 
-    float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-         0.5f, -0.5f, 0.0f,
-         0.0f,  0.5f, 0.0f
-    };
+        // Process keyboard and window events
+        window.processInput();
 
-    GLuint VAO, VBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+        // Step the core physics simulation engine
+        world.step(deltaTime);
 
-    glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), reinterpret_cast<void*>(0));
-    glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-
-    while (!glfwWindowShouldClose(window)) {
-        processInput(window);
-
-        glClearColor(0.1f, 0.2f, 0.2f, 1.0f); // Dark Teal
+        // Clear frame buffer and enable alpha blending for transparent rendering
+        glClearColor(0.1f, 0.2f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);          
 
-        glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3); // Rasterizes 3 vertices as 1 triangle
+        // Render each ball using the shader uniforms and circle geometry
+        shader.use();
+        for (const auto& ball : world.getBalls()) {
+            shader.setVec2("uOffset", ball.position);
+            shader.setVec4("uColor", ball.color);
+            circleRenderer.draw();
+        }
 
-        glfwSwapBuffers(window); // Double-buffering: swaps back-buffer to screen
-        glfwPollEvents();
+        // Process and draw debug controls UI
+        debugUI.beginFrame();
+        debugUI.renderPanel(world);
+        debugUI.endFrame();
+
+        // Display updated frame and handle window events
+        window.swapBuffers();
+        window.pollEvents();
     }
-    
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    glDeleteProgram(shaderProgram);
 
-    glfwDestroyWindow(window);
-    glfwTerminate();
     return 0;
 }

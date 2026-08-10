@@ -1,5 +1,6 @@
 add_library(core STATIC
-    src/World.cpp
+    src/integration/Integrator.cpp
+    src/collision/Collision.cpp
 )
 
 target_include_directories(core PUBLIC
@@ -10,16 +11,16 @@ target_link_libraries(core PUBLIC
     glm::glm
 )
 
+install(TARGETS core ARCHIVE DESTINATION lib)
 install(DIRECTORY include/ DESTINATION include)
 
-# Once real .cpp files land in src/ (fixed-timestep accumulator, collision math —
-# see the extraction rule in §2.1), replace the block above with:
-#
-# add_library(physics_core STATIC
-#     src/<file>.cpp
-# )
-# target_include_directories(physics_core PUBLIC
+# # Remove when src files are added to core, for now core is an INTERFACE library
+# add_library(core INTERFACE)
+
+# target_include_directories(core INTERFACE
 #     ${CMAKE_CURRENT_SOURCE_DIR}/include
 # )
-# install(TARGETS physics_core ARCHIVE DESTINATION lib)
-# install(DIRECTORY include/ DESTINATION include)
+
+# target_link_libraries(core INTERFACE
+#     glm::glm
+# )

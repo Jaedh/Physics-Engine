@@ -1,3 +1,5 @@
+#pragma once
+
 #include <glm/vec2.hpp>
 #include <glm/vec4.hpp>
 #include <cstdint>
@@ -19,7 +21,7 @@ struct Ball {
     float friction{0.1f};
 
     // Render & Identification
-    glm::vec4 color{1.0f, 0.5f, 0.2f, 1.0f};
+    glm::vec4 color{0.2f, 0.5f, 1.0f, 1.0f};
     std::uint32_t id{0};
     bool is_static{false};
 };

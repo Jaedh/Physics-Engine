@@ -18,7 +18,7 @@ public:
     void use() const;
     void setVec2(const char* name, const glm::vec2& value) const;
     // void setVec3(const char* name, const glm::vec3& value) const;
-    void setVec4(const char* name, const glm::vec4& valuew) const;
+    void setVec4(const char* name, const glm::vec4& value) const;
 private:
     GLuint compileShader(GLenum type, const char* source);
     GLuint linkProgram(GLuint vertexShader, GLuint fragmentShader);
@@ -26,6 +26,6 @@ private:
     GLuint m_programID{0};
 };
 
-} // namespace render
+}
 
-#endif // RENDER_SHADER_H
+#endif

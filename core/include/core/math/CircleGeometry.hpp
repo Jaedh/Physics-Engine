@@ -26,6 +26,6 @@ inline std::vector<float> generateCircleVertices(float centerX, float centerY, f
     return vertices;
 }
 
-} // namespace core::math
+}
 
-#endif // CORE_MATH_CIRCLE_GEOMETRY_HPP
+#endif

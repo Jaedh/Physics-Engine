@@ -1,9 +1,8 @@
 #include "render/Window.h"
 #include "render/Shader.h"
 #include "render/CircleRenderer.h"
-#include "render/DebugUI.h"
 
-#include "core/World.h"
+#include "World.h"
 #include "core/math/CircleGeometry.hpp"
 
 #include <glad/glad.h>
@@ -24,7 +23,7 @@
 namespace {
 
 constexpr int kWindowWidth = 800;
-constexpr int kWindowHeight = 600;
+constexpr int kWindowHeight = 800;
 
 const char* kVertexShaderSource = R"(
     #version 460 core
@@ -48,17 +47,20 @@ const char* kFragmentShaderSource = R"(
 } // namespace
 
 int main() {
-    // Initialize windowing system, OpenGL 4.6 context, and GLAD driver bindings
+    // Initialize windowing system
     render::Window window(kWindowWidth, kWindowHeight, "Ball Sim");
     if (!window.isValid()) return -1;
 
     // Compile shader pipeline and initialize the ImGui debug overlay wrapper
     render::Shader shader(kVertexShaderSource, kFragmentShaderSource);
-    render::DebugUI debugUI(window);
 
-    // Initialize core simulation state and spawn an initial ball
-    core::World world;
+    // Ball
+    ball_sim::World world;
     world.addBall(core::Ball{});
+
+    core::Ball ball;
+    ball.position = glm::vec2(0.25f, 0.25f);
+    world.addBall(ball);
 
     // Compute circle geometry points and upload vertex data to GPU memory (VBO/VAO)
     std::vector<float> circleData = core::math::generateCircleVertices(0.0f, 0.0f, 0.2f, 64);
@@ -67,7 +69,7 @@ int main() {
     // Setup high-precision frame timing for time-delta updates
     float lastFrameTime = static_cast<float>(glfwGetTime());
 
-    // Main application render and update loop
+    // Main update loop 
     while (!window.shouldClose()) {
         // Calculate frame delta time in seconds
         float currentFrameTime = static_cast<float>(glfwGetTime());
@@ -93,11 +95,6 @@ int main() {
             shader.setVec4("uColor", ball.color);
             circleRenderer.draw();
         }
-
-        // Process and draw debug controls UI
-        debugUI.beginFrame();
-        debugUI.renderPanel(world);
-        debugUI.endFrame();
 
         // Display updated frame and handle window events
         window.swapBuffers();

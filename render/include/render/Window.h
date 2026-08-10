@@ -27,6 +27,6 @@ private:
     GLFWwindow* m_window{nullptr};
 };
 
-} // namespace render
+}
 
-#endif // RENDER_WINDOW_H
+#endif

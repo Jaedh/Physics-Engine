@@ -72,4 +72,4 @@ GLuint Shader::linkProgram(GLuint vertexShader, GLuint fragmentShader) {
     return program;
 }
 
-} // namespace render
+}

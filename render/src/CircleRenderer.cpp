@@ -29,4 +29,4 @@ void CircleRenderer::draw() const {
     glBindVertexArray(0);
 }
 
-} // namespace render
+}

@@ -22,6 +22,6 @@ private:
     GLsizei m_vertexCount{0};
 };
 
-} // namespace render
+}
 
-#endif // RENDER_CIRCLE_RENDERER_H
+#endif

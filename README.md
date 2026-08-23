@@ -20,11 +20,34 @@ cmake --build --preset msvc-debug
 # Run the simulation
 ./build/msvc-debug/bin/ball-sim.exe
 
-[ ] TODO: Move all the intialisation to App.h/cpp, there main.cpp only initalises the App
+# HIGH PRIORITY
+
+# Key controls
+[ ] TODO: Space -> adds energy to the system
+[ ] TODO: Arrows -> change the direction the balls go
+[ ] TODO: Mouse click adds random ball
+
+
+# Window:
+[ ] TODO: Add functionaility to make the windows dynamic; chnage size
+[ ] TODO: Better background colours, alpha,; maybe a simple background pattern 
+
+# Better coliision:
+[ ] TODO: Test friction and high volumn tests
+[ ] TODO: Fix the build directory; remove all unrequired compile files
+[ ] TODO: Add logging
+[ ] TODO: Add optimisations for collisions detection ++; add test latency and perfromance metrics in a log
+[ ] TODO: 
+
+# Polar
+[ ] TODO: Add calculations and dat to use polar coordinates; centered around the middle of the window 
+[ ] TODO: Shift -> switches gravity between cartesian to polar
+
+
+# LOW PRIORITY
 [ ] TODO: Create a JSON phase funciton and add it to the general functions
 [ ] TODO: Use JSON + JINJA files to define presents: rendring, balls, window, for the App specific (figure out how to make this light weight)
-[ ] TODO: Create a JSON file with defaul phsicys parameters
-[ ] TODO: Fix the build directory; remove all unrequired compile files
+[ ] TODO: Create a JSON file with defaul physics parameters
 
 
 # [ ] TODO: Removed the core/include/core to core/include/; do this for render as well

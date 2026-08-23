@@ -1,7 +1,7 @@
 #ifndef BALL_SIM_WORLD_H
 #define BALL_SIM_WORLD_H
 
-#include "core/Ball.h"
+#include "core/objects/Ball.h"
 #include <vector>
 
 namespace ball_sim {

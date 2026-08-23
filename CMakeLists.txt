@@ -13,7 +13,9 @@ find_package(glm CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 
 add_subdirectory(core)
+add_subdirectory(physics)
 add_subdirectory(render)
+
 add_subdirectory(apps/ball-sim)
 
 # add_subdirectory(ipc)    # do not add until a second executable exists (§7 step 8)

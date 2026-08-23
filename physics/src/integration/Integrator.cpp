@@ -1,8 +1,8 @@
-#include "core/integration/Integrator.h"
+#include "physics/integration/Integrator.h"
 
-namespace core {
+namespace physics {
 
-void Integrator::integrateSymplecticEuler(Ball& ball, const glm::vec2& gravity, float deltaTime) {
+void Integrator::integrateSymplecticEuler(core::Ball& ball, const glm::vec2& gravity, float deltaTime) {
     if (ball.is_static) return;
 
     glm::vec2 currentAcceleration = ball.acceleration + gravity;
@@ -10,4 +10,4 @@ void Integrator::integrateSymplecticEuler(Ball& ball, const glm::vec2& gravity, 
     ball.position += ball.velocity * deltaTime;
 }
 
-} // namespace core
+} // namespace physics

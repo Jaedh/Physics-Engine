@@ -80,7 +80,7 @@ int main() {
         // Process keyboard and window events
         window.processInput();
 
-        // Step the core physics simulation engine
+        // Step the physics simulation engine
         world.step(deltaTime);
 
         // Clear frame buffer and enable alpha blending for transparent rendering

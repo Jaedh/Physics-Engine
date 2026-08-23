@@ -10,6 +10,7 @@ target_include_directories(ball-sim PRIVATE
 
 target_link_libraries(ball-sim PRIVATE
     core
+    physics
     render
 )
 

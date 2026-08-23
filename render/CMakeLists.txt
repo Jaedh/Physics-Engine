@@ -8,7 +8,6 @@ target_include_directories(render PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-# remove core from here, there should be no need to add core here
 target_link_libraries(render PUBLIC
     core
     glfw

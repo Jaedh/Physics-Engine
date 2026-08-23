@@ -1,6 +1,6 @@
 #include "World.h"
-#include <core/integration/Integrator.h>
-#include <core/collision/Collision.h>
+#include <physics/integration/Integrator.h>
+#include <physics/collision/Collision.h>
 
 namespace ball_sim {
 
@@ -9,17 +9,17 @@ void World::step(float deltaTime) {
 
     // 1. Integration phase (Velocity & Position update)
     for (auto& ball : m_balls) {
-        core::Integrator::integrateSymplecticEuler(ball, gravityVector, deltaTime);
+        physics::Integrator::integrateSymplecticEuler(ball, gravityVector, deltaTime);
     }
 
     // 2. Collision resolution phase
     for (size_t i = 0; i < m_balls.size(); ++i) {
         // Wall / Boundary collision
-        core::Collision::resolveAABB(m_balls[i]);
+        physics::Collision::resolveAABB(m_balls[i]);
 
         // Circle-to-Circle collision
         for (size_t j = i + 1; j < m_balls.size(); ++j) {
-            core::Collision::resolveCircleToCircle(m_balls[i], m_balls[j]);
+            physics::Collision::resolveCircleToCircle(m_balls[i], m_balls[j]);
         }
     }
 }

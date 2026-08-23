@@ -1,13 +1,10 @@
-add_library(core STATIC
-    src/integration/Integrator.cpp
-    src/collision/Collision.cpp
-)
+add_library(core INTERFACE)
 
-target_include_directories(core PUBLIC
+target_include_directories(core INTERFACE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_link_libraries(core PUBLIC
+target_link_libraries(core INTERFACE
     glm::glm
 )
 

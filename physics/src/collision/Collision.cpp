@@ -1,11 +1,11 @@
-#include "core/collision/Collision.h"
+#include "physics/collision/Collision.h"
 #include <algorithm>
 #include <cmath>
 #include <glm/geometric.hpp>
 
-namespace core {
+namespace physics {
 
-void Collision::resolveAABB(Ball& ball, float minBound, float maxBound) {
+void Collision::resolveAABB(core::Ball& ball, float minBound, float maxBound) {
     const float minX = minBound + ball.radius;
     const float maxX = maxBound - ball.radius;
     const float minY = minBound + ball.radius;
@@ -24,7 +24,7 @@ void Collision::resolveAABB(Ball& ball, float minBound, float maxBound) {
     }
 }
 
-void Collision::resolveCircleToCircle(Ball& a, Ball& b) {
+void Collision::resolveCircleToCircle(core::Ball& a, core::Ball& b) {
     glm::vec2 delta = b.position - a.position;
     float distSq = delta.x * delta.x + delta.y * delta.y;
     float radiusSum = a.radius + b.radius;
@@ -56,4 +56,4 @@ void Collision::resolveCircleToCircle(Ball& a, Ball& b) {
     b.velocity += normal * (impulseMagnitude * b.inv_mass);
 }
 
-} // namespace core
+} // namespace physics

@@ -14,7 +14,7 @@ struct Ball {
     glm::vec2 acceleration{0.0f, 0.0f};
 
     // Geometry & Material Dynamics
-    float radius{0.2f};
+    float radius{0.1f};
     float mass{1.0f};
     float inv_mass{1.0f};     // 0.0f if static
     float restitution{0.8f};  // Bounciness (0.0 = clay, 1.0 = superball)

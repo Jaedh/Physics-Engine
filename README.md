@@ -27,10 +27,10 @@ cmake --build --preset msvc-debug
 [ ] TODO: Arrows -> change the direction the balls go
 [ ] TODO: Mouse click adds random ball
 
-
 # Window:
 [ ] TODO: Add functionaility to make the windows dynamic; chnage size
 [ ] TODO: Better background colours, alpha,; maybe a simple background pattern 
+[ ] TODO: Remove console that opens when .exe is run
 
 # Better coliision:
 [ ] TODO: Test friction and high volumn tests

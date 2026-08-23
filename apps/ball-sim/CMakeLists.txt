@@ -1,5 +1,6 @@
 add_executable(ball-sim
     src/main.cpp
+    src/App.cpp
     src/World.cpp
     src/Presenter.cpp
 )

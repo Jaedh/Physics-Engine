@@ -1,27 +1,24 @@
 #ifndef BALL_SIM_WORLD_H
 #define BALL_SIM_WORLD_H
 
-#include "core/objects/Ball.h"
 #include <vector>
+#include "core/objects/Ball.h"
 
 namespace ball_sim {
 
 class World {
     private:
-        std::vector<core::Ball> m_balls;
         float m_gravity{-9.81f};
-
+        float currentFrameTime;
+        float lastFrameTime;
+        float deltaTime;
     public:
-        World() = default;
+        World();
+        ~World() = default;
 
-        void addBall(const core::Ball& ball);
-
-        const std::vector<core::Ball>& getBalls() const;
-        std::vector<core::Ball>& getBalls();
-
-        void step(float deltaTime);
+        void step(std::vector<core::Ball>& m_balls);
 };
 
-}
+} // namespace ball_sim
 
-#endif 
+#endif // BALL_SIM_WORLD_H

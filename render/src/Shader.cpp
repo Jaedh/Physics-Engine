@@ -1,5 +1,6 @@
 #include "render/Shader.h"
 #include <iostream>
+#include <utility>
 
 namespace render {
 
@@ -13,11 +14,37 @@ Shader::Shader(const char* vertexSource, const char* fragmentSource) {
 }
 
 Shader::~Shader() {
-    if (m_programID != 0) glDeleteProgram(m_programID);
+    if (m_programID != 0) {
+        glDeleteProgram(m_programID);
+    }
+}
+
+// Move constructor
+Shader::Shader(Shader&& other) noexcept 
+    : m_programID(std::exchange(other.m_programID, 0)) {}
+
+// Move assignment operator
+Shader& Shader::operator=(Shader&& other) noexcept {
+    if (this != &other) {
+        if (m_programID != 0) {
+            glDeleteProgram(m_programID);
+        }
+        m_programID = std::exchange(other.m_programID, 0);
+    }
+    return *this;
 }
 
 void Shader::use() const {
-    glUseProgram(m_programID);
+    if (m_programID != 0) {
+        glUseProgram(m_programID);
+    }
+}
+
+void Shader::setFloat(const char* name, float value) const {
+    GLint loc = glGetUniformLocation(m_programID, name);
+    if (loc != -1) {
+        glUniform1f(loc, value);
+    }
 }
 
 void Shader::setVec2(const char* name, const glm::vec2& value) const {
@@ -26,13 +53,6 @@ void Shader::setVec2(const char* name, const glm::vec2& value) const {
         glUniform2f(loc, value.x, value.y);
     }
 }
-
-// void Shader::setVec3(const char* name, float x, float y, float z) const {
-//     GLint loc = glGetUniformLocation(m_programID, name);
-//     if (loc != -1) {
-//         glUniform3f(loc, x, y, z);
-//     }
-// }
 
 void Shader::setVec4(const char* name, const glm::vec4& value) const {
     GLint loc = glGetUniformLocation(m_programID, name);
@@ -72,4 +92,4 @@ GLuint Shader::linkProgram(GLuint vertexShader, GLuint fragmentShader) {
     return program;
 }
 
-}
+} // namespace render

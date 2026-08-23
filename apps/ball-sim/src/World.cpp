@@ -1,11 +1,26 @@
 #include "World.h"
-#include <physics/integration/Integrator.h>
-#include <physics/collision/Collision.h>
+
+#include <glm/vec2.hpp>
+#include <GLFW/glfw3.h>
+
+#include "physics/integration/Integrator.h"
+#include "physics/collision/Collision.h"
 
 namespace ball_sim {
 
-void World::step(float deltaTime) {
+World::World(){
+    lastFrameTime = static_cast<float>(glfwGetTime());
+    currentFrameTime = 0.0f;
+    deltaTime = 0.0f;
+};
+
+void World::step(std::vector<core::Ball>& m_balls) {
     const glm::vec2 gravityVector{0.0f, m_gravity};
+
+    // Calculate frame delta time in seconds
+    currentFrameTime = static_cast<float>(glfwGetTime());
+    deltaTime = currentFrameTime - lastFrameTime;
+    lastFrameTime = currentFrameTime;
 
     // 1. Integration phase (Velocity & Position update)
     for (auto& ball : m_balls) {
@@ -24,16 +39,4 @@ void World::step(float deltaTime) {
     }
 }
 
-void World::addBall(const core::Ball& ball) { 
-    m_balls.push_back(ball);
-}
-
-const std::vector<core::Ball>& World::getBalls() const { 
-    return m_balls; 
-}
-
-std::vector<core::Ball>& World::getBalls() { 
-    return m_balls; 
-}
-
-}
+} // namespace ball_sim

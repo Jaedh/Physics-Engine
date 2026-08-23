@@ -20,12 +20,11 @@ cmake --build --preset msvc-debug
 # Run the simulation
 ./build/msvc-debug/bin/ball-sim.exe
 
-[ ] TODO: Create a Presenter.h/cpp files to contain all the rendering of the program
 [ ] TODO: Move all the intialisation to App.h/cpp, there main.cpp only initalises the App
 [ ] TODO: Create a JSON phase funciton and add it to the general functions
 [ ] TODO: Use JSON + JINJA files to define presents: rendring, balls, window, for the App specific (figure out how to make this light weight)
 [ ] TODO: Create a JSON file with defaul phsicys parameters
-[ ] TODO: 
+[ ] TODO: Fix the build directory; remove all unrequired compile files
 
 
 # [ ] TODO: Removed the core/include/core to core/include/; do this for render as well

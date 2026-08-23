@@ -1,6 +1,7 @@
 add_executable(ball-sim
     src/main.cpp
     src/World.cpp
+    src/Presenter.cpp
 )
 
 target_include_directories(ball-sim PRIVATE 

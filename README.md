@@ -20,5 +20,11 @@ cmake --build --preset msvc-debug
 # Run the simulation
 ./build/msvc-debug/bin/ball-sim.exe
 
-[ ] TODO: Create ball_sim::App wrapper class in apps/ball-sim/. Goal: Own and drive the update loop, input handling, frame timing, and render calls.
-[ ] TODO: Refactor main.cpp into a 5-line entry point that instantiates and executes App::run().
+[ ] TODO: Create a Presenter.h/cpp files to contain all the rendering of the program
+[ ] TODO: Move all the intialisation to App.h/cpp, there main.cpp only initalises the App
+[ ] TODO: Removed the core/include/core to core/include/; do this for render as well
+[ ] TODO: Rename core to physics and make a directory for general fucntions
+[ ] TODO: Create a JSON phase funciton and add it to the general functions
+[ ] TODO: Use JSON + JINJA files to define presents: rendring, balls, window, for the App specific (figure out how to make this light weight)
+[ ] TODO: Create a JSON file with defaul phsicys parameters
+[ ] TODO: 

@@ -7,19 +7,19 @@
 namespace ball_sim {
 
 class World {
-private:
-    std::vector<core::Ball> m_balls;
-    float m_gravity{-9.81f};
+    private:
+        std::vector<core::Ball> m_balls;
+        float m_gravity{-9.81f};
 
-public:
-    World() = default;
+    public:
+        World() = default;
 
-    void addBall(const core::Ball& ball);
+        void addBall(const core::Ball& ball);
 
-    const std::vector<core::Ball>& getBalls() const;
-    std::vector<core::Ball>& getBalls();
+        const std::vector<core::Ball>& getBalls() const;
+        std::vector<core::Ball>& getBalls();
 
-    void step(float deltaTime);
+        void step(float deltaTime);
 };
 
 }

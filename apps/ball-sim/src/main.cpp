@@ -3,6 +3,8 @@
 #include "render/CircleRenderer.h"
 
 #include "World.h"
+#include "Presenter.h"
+
 #include "core/math/CircleGeometry.hpp"
 
 #include <glad/glad.h>
@@ -37,7 +39,7 @@ const char* kVertexShaderSource = R"(
 const char* kFragmentShaderSource = R"(
     #version 460 core
     out vec4 FragColor;
-    uniform vec4 uColor; // Recieves color from Ball.h
+    uniform vec4 uColor;
     
     void main() {
         FragColor = uColor;
@@ -54,10 +56,9 @@ int main() {
     // Compile shader pipeline and initialize the ImGui debug overlay wrapper
     render::Shader shader(kVertexShaderSource, kFragmentShaderSource);
 
-    // Ball
+    // WORLD SIMULATION SETUP
     ball_sim::World world;
     world.addBall(core::Ball{});
-
     core::Ball ball;
     ball.position = glm::vec2(0.25f, 0.25f);
     world.addBall(ball);

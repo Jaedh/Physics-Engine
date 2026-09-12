@@ -23,13 +23,13 @@ cmake --build --preset msvc-debug
 # HIGH PRIORITY
 
 # Window:
-[ ] TODO: Add functionaility to make the windows dynamic; chnage size
 [ ] TODO: Better background colours, alpha,; maybe a simple background pattern 
-[ ] TODO: Remove console that opens when .exe is run (only for the final and not the debug version)
+[ ] TODO: Add a button to clear all the balls
 
 # Re-Architect 2
 [ ] TODO: Fix up the build directory ( get rid of all the useless files and folders); ideally just have bin, config, a single cmake folder, libs 
 [ ] TODO: Add logging
+[ ] TODO: Remove console that opens when .exe is run (only for the final and not the debug version)
 
 # Better coliision:
 [ ] TODO: Test friction and high volumn tests

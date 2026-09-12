@@ -22,6 +22,7 @@ class App {
         std::vector<core::Ball> m_balls;
 
         float m_lastFrameTime{0.0f};
+        float aspectRatio{1.0f};
 
         void initDefaultScene();
     public:
@@ -33,6 +34,7 @@ class App {
 
         void run();
         void processInput();
+        void processAspectRatio();
 
         void addBall(const core::Ball& ball);
         void addRandomBall(

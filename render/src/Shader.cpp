@@ -1,6 +1,8 @@
 #include "render/Shader.h"
+
 #include <iostream>
 #include <utility>
+#include <glm/gtc/type_ptr.hpp>
 
 namespace render {
 
@@ -58,6 +60,13 @@ void Shader::setVec4(const char* name, const glm::vec4& value) const {
     GLint loc = glGetUniformLocation(m_programID, name);
     if (loc != -1) {
         glUniform4f(loc, value.x, value.y, value.z, value.w);
+    }
+}
+
+void Shader::setMat4(const char* name, const glm::mat4& value) const {
+    GLint loc = glGetUniformLocation(m_programID, name);
+    if (loc != -1) {
+        glUniformMatrix4fv(loc, 1, GL_FALSE, glm::value_ptr(value));
     }
 }
 

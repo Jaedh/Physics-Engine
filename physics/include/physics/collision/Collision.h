@@ -7,7 +7,8 @@ namespace physics {
 
 class Collision {
     public:
-        static void resolveAABB(core::Ball& ball, float minBound = -1.0f, float maxBound = 1.0f);
+        static void resolveAABB(core::Ball& ball, float aspectRatio);
+        static void resolveAABB(core::Ball& ball, glm::vec2 minBounds, glm::vec2 maxBounds);
         static void resolveCircleToCircle(core::Ball& a, core::Ball& b);
 };
 

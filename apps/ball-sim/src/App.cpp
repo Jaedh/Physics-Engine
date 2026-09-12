@@ -9,7 +9,7 @@ namespace ball_sim {
 
 App::App(int width, int height, std::string_view title)
     : m_window(width, height, title.data()),
-      m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 64)) {
+      m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 128)) {
     
     initDefaultScene();
 }
@@ -63,6 +63,23 @@ void App::processInput() {
     }
     rightWasPressed = rightIsPressed;
 
+    // C: Delete all balls
+    static bool cWasPressed = false;
+    bool cIsPressed = m_window.isKeyPressed(GLFW_KEY_C);
+    if (cIsPressed && !cWasPressed) {
+        m_balls.clear();
+    }
+    cWasPressed = cIsPressed;
+
+    // R: Reset the scene
+    static bool rWasPressed = false;
+    bool rIsPressed = m_window.isKeyPressed(GLFW_KEY_R);
+    if (rIsPressed && !rWasPressed) {
+        m_balls.clear();
+        initDefaultScene();
+    }
+    rWasPressed = rIsPressed;
+
     // MOUSE LEFT CLICK: Spawn a new ball at the cursor position
     static bool mouseWasPressed = false;
     bool mouseIsPressed = m_window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT);
@@ -71,10 +88,16 @@ void App::processInput() {
         auto [xpos, ypos] = m_window.getCursorPosition();
         auto [width, height] = m_window.getDimensions();
 
-        float ndcX = (static_cast<float>(xpos) / static_cast<float>(width)) * 2.0f - 1.0f;
-        float ndcY = 1.0f - (static_cast<float>(ypos) / static_cast<float>(height)) * 2.0f;
+        // float ndcX = (static_cast<float>(xpos) / static_cast<float>(width)) * 2.0f - 1.0f;
+        // float ndcY = 1.0f - (static_cast<float>(ypos) / static_cast<float>(height)) * 2.0f;
 
-        glm::vec2 spawnPosition{ndcX, ndcY};
+        // glm::vec2 spawnPosition{ndcX, ndcY};
+
+        float aspectRatio = static_cast<float>(width) / static_cast<float>(height);
+        float worldX = ((static_cast<float>(xpos) / width) * 2.0f - 1.0f) * aspectRatio;
+        float worldY = 1.0f - (static_cast<float>(ypos) / height) * 2.0f;
+        glm::vec2 spawnPosition{worldX, worldY};
+
         addRandomBall(
             /*isStatic=*/std::nullopt,
             /*radius=*/std::nullopt,
@@ -83,8 +106,11 @@ void App::processInput() {
         );
     }
     mouseWasPressed = mouseIsPressed;
+}
 
-
+void App::processAspectRatio() {
+    auto [width, height] = m_window.getDimensions();
+    aspectRatio = static_cast<float>(width) / static_cast<float>(height);
 }
 
 void App::addBall(const core::Ball& ball) {
@@ -115,7 +141,7 @@ void App::addRandomBall(
 
     ball.radius      = radius.value_or(distRadius(gen));
     ball.color       = color.value_or(glm::vec4(distColor(gen), distColor(gen), distColor(gen), 1.0f));
-    ball.position    = position.value_or(glm::vec2(distPos(gen), distPos(gen)));
+    ball.position    = position.value_or(glm::vec2(distPos(gen)*aspectRatio, distPos(gen)*aspectRatio));
     ball.velocity    = ball.is_static ? glm::vec2(0.0f) : velocity.value_or(glm::vec2(distVel(gen), distVel(gen)));
     ball.restitution = restitution.value_or(distRest(gen));
 
@@ -128,12 +154,13 @@ void App::run() {
     while (!m_window.shouldClose()) {
         // Process Input
         processInput();
+        processAspectRatio();
 
         // Step World Simulation
-        m_world.step(m_balls);
+        m_world.step(m_balls, aspectRatio);
 
         // Render Frame
-        m_presenter.pres_step(m_balls);
+        m_presenter.pres_step(m_balls, aspectRatio);
 
         // Display
         m_window.swapBuffers();

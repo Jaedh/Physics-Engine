@@ -5,11 +5,15 @@
 
 namespace physics {
 
-void Collision::resolveAABB(core::Ball& ball, float minBound, float maxBound) {
-    const float minX = minBound + ball.radius;
-    const float maxX = maxBound - ball.radius;
-    const float minY = minBound + ball.radius;
-    const float maxY = maxBound - ball.radius;
+void Collision::resolveAABB(core::Ball& ball, float aspectRatio) {
+    resolveAABB(ball, glm::vec2(-aspectRatio, -1.0f), glm::vec2(aspectRatio, 1.0f));
+}
+
+void Collision::resolveAABB(core::Ball& ball, glm::vec2 minBounds, glm::vec2 maxBounds) {
+    const float minX = minBounds.x + ball.radius;
+    const float maxX = maxBounds.x - ball.radius;
+    const float minY = minBounds.y + ball.radius;
+    const float maxY = maxBounds.y - ball.radius;
 
     if (ball.position.x < minX || ball.position.x > maxX) {
         ball.position.x = std::clamp(ball.position.x, minX, maxX);

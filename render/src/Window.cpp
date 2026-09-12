@@ -6,14 +6,12 @@
 
 namespace render {
 
-Window::Window(int width, int height, const char* title) {
+Window::Window(int width, int height, const char* title)
+    : m_width(width), m_height(height) {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return;
     }
-
-    m_width = width;
-    m_height = height;
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -69,9 +67,10 @@ GLFWwindow* Window::getNativeWindow() const {
 }
 
 void Window::framebufferSizeCallback(GLFWwindow* window, int width, int height) {
+    if (width == 0 || height == 0) return;
+    
     glViewport(0, 0, width, height);
     
-    // Retrieve class instance and update stored dimensions
     auto* self = static_cast<Window*>(glfwGetWindowUserPointer(window));
     if (self) {
         self->m_width = width;

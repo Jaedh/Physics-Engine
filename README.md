@@ -22,22 +22,19 @@ cmake --build --preset msvc-debug
 
 # HIGH PRIORITY
 
-# Key controls
-[ ] TODO: Space -> adds energy to the system
-[ ] TODO: Arrows -> change the direction the balls go
-[ ] TODO: Mouse click adds random ball
-
 # Window:
 [ ] TODO: Add functionaility to make the windows dynamic; chnage size
 [ ] TODO: Better background colours, alpha,; maybe a simple background pattern 
-[ ] TODO: Remove console that opens when .exe is run
+[ ] TODO: Remove console that opens when .exe is run (only for the final and not the debug version)
+
+# Re-Architect 2
+[ ] TODO: Fix up the build directory ( get rid of all the useless files and folders); ideally just have bin, config, a single cmake folder, libs 
+[ ] TODO: Add logging
 
 # Better coliision:
 [ ] TODO: Test friction and high volumn tests
 [ ] TODO: Fix the build directory; remove all unrequired compile files
-[ ] TODO: Add logging
 [ ] TODO: Add optimisations for collisions detection ++; add test latency and perfromance metrics in a log
-[ ] TODO: 
 
 # Polar
 [ ] TODO: Add calculations and dat to use polar coordinates; centered around the middle of the window 

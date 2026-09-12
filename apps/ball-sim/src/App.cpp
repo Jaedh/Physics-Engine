@@ -15,34 +15,111 @@ App::App(int width, int height, std::string_view title)
 }
 
 void App::initDefaultScene() {
-    core::Ball ball_1;
+    for(int i = 0; i < 30; ++i) {
+        addRandomBall();
+    }
+}
 
-    core::Ball ball_2;
-    ball_2.position = glm::vec2(0.25f, 0.25f);
-    ball_2.color = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
+void App::processInput() {
+    m_window.processInput();
 
-    m_balls.push_back(ball_1);
-    m_balls.push_back(ball_2);
+    // SPACE: Apply impulse to all balls
+    static bool spaceWasPressed = false;
+    bool spaceIsPressed = m_window.isKeyPressed(GLFW_KEY_SPACE);
+    if (spaceIsPressed && !spaceWasPressed) {
+        m_world.applyImpulseToAll(m_balls, glm::vec2(0.0f, 5.0f));
+    }
+    spaceWasPressed = spaceIsPressed;
+
+    // UP: Change gravity direction upwards
+    static bool upWasPressed = false;
+    bool upIsPressed = m_window.isKeyPressed(GLFW_KEY_UP);
+    if (upIsPressed && !upWasPressed) {
+        m_world.setGravityDirection(glm::vec2(0.0f, 1.0f));
+    }
+    upWasPressed = upIsPressed;
+
+    // DOWN: Change gravity direction downwards
+    static bool downWasPressed = false;
+    bool downIsPressed = m_window.isKeyPressed(GLFW_KEY_DOWN);
+    if (downIsPressed && !downWasPressed) {
+        m_world.setGravityDirection(glm::vec2(0.0f, -1.0f));
+    }
+    downWasPressed = downIsPressed;
+
+    // LEFT: Change gravity direction left
+    static bool leftWasPressed = false;
+    bool leftIsPressed = m_window.isKeyPressed(GLFW_KEY_LEFT);
+    if (leftIsPressed && !leftWasPressed) {
+        m_world.setGravityDirection(glm::vec2(-1.0f, 0.0f));
+    }
+    leftWasPressed = leftIsPressed;
+
+    // RIGHT: Change gravity direction right
+    static bool rightWasPressed = false;
+    bool rightIsPressed = m_window.isKeyPressed(GLFW_KEY_RIGHT);
+    if (rightIsPressed && !rightWasPressed) {
+        m_world.setGravityDirection(glm::vec2(1.0f, 0.0f));
+    }
+    rightWasPressed = rightIsPressed;
+
+    // MOUSE LEFT CLICK: Spawn a new ball at the cursor position
+    static bool mouseWasPressed = false;
+    bool mouseIsPressed = m_window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT);
+
+    if (mouseIsPressed && !mouseWasPressed) {
+        auto [xpos, ypos] = m_window.getCursorPosition();
+        auto [width, height] = m_window.getDimensions();
+
+        float ndcX = (static_cast<float>(xpos) / static_cast<float>(width)) * 2.0f - 1.0f;
+        float ndcY = 1.0f - (static_cast<float>(ypos) / static_cast<float>(height)) * 2.0f;
+
+        glm::vec2 spawnPosition{ndcX, ndcY};
+        addRandomBall(
+            /*isStatic=*/std::nullopt,
+            /*radius=*/std::nullopt,
+            /*color=*/std::nullopt,
+            /*position=*/spawnPosition
+        );
+    }
+    mouseWasPressed = mouseIsPressed;
+
+
 }
 
 void App::addBall(const core::Ball& ball) {
     m_balls.push_back(ball);
 }
 
-void App::addRandomBall() {
+void App::addRandomBall(
+    std::optional<bool> isStatic,
+    std::optional<float> radius,
+    std::optional<glm::vec4> color,
+    std::optional<glm::vec2> position,
+    std::optional<glm::vec2> velocity,
+    std::optional<float> restitution
+) {
     static std::mt19937 gen(std::random_device{}());
+    
     std::uniform_real_distribution<float> distPos(-0.8f, 0.8f);
     std::uniform_real_distribution<float> distVel(-1.0f, 1.0f);
     std::uniform_real_distribution<float> distColor(0.2f, 1.0f);
     std::uniform_real_distribution<float> distRadius(0.05f, 0.15f);
+    std::uniform_real_distribution<float> distRest(0.5f, 0.95f);
 
     core::Ball ball;
-    ball.position = glm::vec2(distPos(gen), distPos(gen));
-    ball.velocity = glm::vec2(distVel(gen), distVel(gen));
-    ball.color = glm::vec4(distColor(gen), distColor(gen), distColor(gen), 1.0f);
-    ball.radius = distRadius(gen);
 
-    m_balls.push_back(ball);
+    ball.is_static   = isStatic.value_or(false);
+    ball.mass        = ball.is_static ? 0.0f : 1.0f;
+    ball.inv_mass    = ball.is_static ? 0.0f : (1.0f / ball.mass);
+
+    ball.radius      = radius.value_or(distRadius(gen));
+    ball.color       = color.value_or(glm::vec4(distColor(gen), distColor(gen), distColor(gen), 1.0f));
+    ball.position    = position.value_or(glm::vec2(distPos(gen), distPos(gen)));
+    ball.velocity    = ball.is_static ? glm::vec2(0.0f) : velocity.value_or(glm::vec2(distVel(gen), distVel(gen)));
+    ball.restitution = restitution.value_or(distRest(gen));
+
+    addBall(ball);
 }
 
 void App::run() {
@@ -50,7 +127,7 @@ void App::run() {
 
     while (!m_window.shouldClose()) {
         // Process Input
-        m_window.processInput();
+        processInput();
 
         // Step World Simulation
         m_world.step(m_balls);

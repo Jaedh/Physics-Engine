@@ -3,6 +3,9 @@
 
 #include <vector>
 #include <string_view>
+#include <optional>
+#include <glm/vec2.hpp>
+#include <glm/vec4.hpp>
 
 #include "render/Window.h"
 #include "core/objects/Ball.h"
@@ -12,31 +15,36 @@
 namespace ball_sim {
 
 class App {
-public:
-    App(int width, int height, std::string_view title);
-    ~App() = default;
+    private:
+        render::Window m_window;
+        World m_world;
+        Presenter m_presenter;
+        std::vector<core::Ball> m_balls;
 
-    // Prevent copying
-    App(const App&) = delete;
-    App& operator=(const App&) = delete;
+        float m_lastFrameTime{0.0f};
 
-    void run();
+        void initDefaultScene();
+    public:
+        App(int width, int height, std::string_view title);
+        ~App() = default;
 
-    // Helper to spawn balls for testing
-    void addRandomBall();
-    void addBall(const core::Ball& ball);
+        App(const App&) = delete;
+        App& operator=(const App&) = delete;
 
-private:
-    render::Window m_window;
-    World m_world;
-    Presenter m_presenter;
-    std::vector<core::Ball> m_balls;
+        void run();
+        void processInput();
 
-    float m_lastFrameTime{0.0f};
-
-    void initDefaultScene();
+        void addBall(const core::Ball& ball);
+        void addRandomBall(
+            std::optional<bool> isStatic = std::nullopt,
+            std::optional<float> radius = std::nullopt,
+            std::optional<glm::vec4> color = std::nullopt,
+            std::optional<glm::vec2> position = std::nullopt,
+            std::optional<glm::vec2> velocity = std::nullopt,
+            std::optional<float> restitution = std::nullopt
+        );
 };
 
-} // namespace ball_sim
+} 
 
 #endif // BALL_SIM_APP_H

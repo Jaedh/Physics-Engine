@@ -12,6 +12,9 @@ Window::Window(int width, int height, const char* title) {
         return;
     }
 
+    m_width = width;
+    m_height = height;
+
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -24,6 +27,7 @@ Window::Window(int width, int height, const char* title) {
     }
 
     glfwMakeContextCurrent(m_window);
+    glfwSetWindowUserPointer(m_window, this);
     glfwSetFramebufferSizeCallback(m_window, framebufferSizeCallback);
 
     if (!gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress))) {
@@ -44,6 +48,10 @@ Window::~Window() {
     glfwTerminate();
 }
 
+bool Window::isValid() const { 
+    return m_window != nullptr; 
+}
+
 bool Window::shouldClose() const {
     return glfwWindowShouldClose(m_window);
 }
@@ -56,14 +64,43 @@ void Window::swapBuffers() const {
     glfwSwapBuffers(m_window);
 }
 
+GLFWwindow* Window::getNativeWindow() const {
+    return m_window;
+}
+
+void Window::framebufferSizeCallback(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height);
+    
+    // Retrieve class instance and update stored dimensions
+    auto* self = static_cast<Window*>(glfwGetWindowUserPointer(window));
+    if (self) {
+        self->m_width = width;
+        self->m_height = height;
+    }
+}
+
 void Window::processInput() {
     if (glfwGetKey(m_window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
         glfwSetWindowShouldClose(m_window, true);
     }
 }
 
-void Window::framebufferSizeCallback(GLFWwindow*, int width, int height) {
-    glViewport(0, 0, width, height);
+bool Window::isKeyPressed(int key) const {
+    return glfwGetKey(m_window, key) == GLFW_PRESS;
+}
+
+bool Window::isMouseButtonPressed(int button) const {
+    return glfwGetMouseButton(m_window, button) == GLFW_PRESS;
+}
+
+std::pair<double, double> Window::getCursorPosition() const {
+    double xpos, ypos;
+    glfwGetCursorPos(m_window, &xpos, &ypos);
+    return {xpos, ypos};
+}
+
+std::pair<int, int> Window::getDimensions() const {
+    return {m_width, m_height};
 }
 
 }

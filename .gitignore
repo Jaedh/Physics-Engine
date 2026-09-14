@@ -1,6 +1,8 @@
 # Build artifacts
 /build/
 /out/
+apps/**/build/
+apps/**/out/
 
 # vcpkg
 vcpkg_installed/

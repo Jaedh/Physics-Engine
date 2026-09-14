@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\.build\ball-sim-debug\CMakeFiles\f4d1f68e8e76516252a0f5a97d610253\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{762BD3E7-0545-3CFE-A3D4-A6E921BA6793}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

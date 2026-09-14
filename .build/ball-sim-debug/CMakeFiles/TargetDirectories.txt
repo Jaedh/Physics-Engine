@@ -1,0 +1,10 @@
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/INSTALL.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/core/CMakeFiles/INSTALL.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/physics/CMakeFiles/physics.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/physics/CMakeFiles/INSTALL.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/render/CMakeFiles/render.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/render/CMakeFiles/INSTALL.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/CMakeFiles/ball-sim.dir
+C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/CMakeFiles/INSTALL.dir

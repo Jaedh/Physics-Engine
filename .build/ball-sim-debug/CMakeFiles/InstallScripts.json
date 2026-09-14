@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/cmake_install.cmake",
+		"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/core/cmake_install.cmake",
+		"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/physics/cmake_install.cmake",
+		"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/libs/render/cmake_install.cmake",
+		"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

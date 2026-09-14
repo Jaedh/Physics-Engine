@@ -1,0 +1,10 @@
+^C:\USERS\JAEDH\DOCUMENTS\04 STEM\02 PROGRAMMING\PHYSICS-ENGINE\.BUILD\BALL-SIM-DEBUG\CMAKEFILES\F4D1F68E8E76516252A0F5A97D610253\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine" "-BC:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/physics-lab.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

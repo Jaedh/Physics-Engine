@@ -22,18 +22,16 @@ cmake --build --preset msvc-debug
 
 # HIGH PRIORITY
 
-# Window:
-[ ] TODO: Better background colours, alpha,; maybe a simple background pattern 
-[ ] TODO: Add a button to clear all the balls
-
 # Re-Architect 2
+[ ] TODO: Fix up the repo directory: (get rid of the cmake files or do something smart wioth it; add core, physics and render into a lib type folder; add all the )
+[ ] TODO: Modify the build directory to be specific to each of the apps: (move the cmake into it; apps/ball-sim/ should contain: include, src, build (debug, rel ,...))
 [ ] TODO: Fix up the build directory ( get rid of all the useless files and folders); ideally just have bin, config, a single cmake folder, libs 
 [ ] TODO: Add logging
+[ ] TODO: Add Performance metrics in a seperate terminal
 [ ] TODO: Remove console that opens when .exe is run (only for the final and not the debug version)
 
 # Better coliision:
 [ ] TODO: Test friction and high volumn tests
-[ ] TODO: Fix the build directory; remove all unrequired compile files
 [ ] TODO: Add optimisations for collisions detection ++; add test latency and perfromance metrics in a log
 
 # Polar

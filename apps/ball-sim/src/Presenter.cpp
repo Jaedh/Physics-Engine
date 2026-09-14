@@ -22,6 +22,10 @@ void Presenter::pres_step(const std::vector<core::Ball>& balls, float aspectRati
     m_shader.use();
     m_shader.setMat4("uProjection", projection);
 
+    // TODO: Add border rendering support in the future
+    // m_shader.setVec4("uBorderColor", glm::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+    // m_shader.setFloat("uBorderThickness", 0.08f);
+
     for (const auto& ball : balls) {
         m_shader.setVec2("uOffset", ball.position);
         m_shader.setFloat("uRadius", ball.radius);

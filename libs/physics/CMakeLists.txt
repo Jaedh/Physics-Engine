@@ -12,5 +12,4 @@ target_link_libraries(physics PUBLIC
     glm::glm
 )
 
-# install(TARGETS physics ARCHIVE DESTINATION lib)
 install(DIRECTORY include/ DESTINATION include)

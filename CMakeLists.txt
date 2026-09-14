@@ -12,9 +12,9 @@ find_package(glad CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 
-add_subdirectory(core)
-add_subdirectory(physics)
-add_subdirectory(render)
+add_subdirectory(libs/core)
+add_subdirectory(libs/physics)
+add_subdirectory(libs/render)
 
 add_subdirectory(apps/ball-sim)
 

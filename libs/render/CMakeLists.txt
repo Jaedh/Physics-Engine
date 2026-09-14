@@ -16,5 +16,4 @@ target_link_libraries(render PUBLIC
     glm::glm
 )
 
-# install(TARGETS render ARCHIVE DESTINATION lib)
 install(DIRECTORY include/ DESTINATION include)

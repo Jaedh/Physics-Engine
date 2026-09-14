@@ -23,10 +23,9 @@ cmake --build --preset msvc-debug
 # HIGH PRIORITY
 
 # Re-Architect 2
-[ ] TODO: Fix up the repo directory: (add core, physics and render into a lib type folder; )
-[ ] TODO: Ranme core to something sensible
 [ ] TODO: Modify the build directory to be specific to each of the apps: (move the cmake into it; apps/ball-sim/ should contain: include, src, build (debug, rel ,...))
 [ ] TODO: Fix up the build directory ( get rid of all the useless files and folders); ideally just have bin, config, a single cmake folder, libs 
+[ ] TODO: Find a elagant place to put the cmake files
 [ ] TODO: Add logging
 [ ] TODO: Add Performance metrics in a seperate terminal
 [ ] TODO: Remove console that opens when .exe is run (only for the final and not the debug version)
@@ -41,6 +40,7 @@ cmake --build --preset msvc-debug
 
 
 # LOW PRIORITY
+[ ] TODO: Figure out what to do with core, currently feels like an 'other' library
 [ ] TODO: Create a JSON phase funciton and add it to the general functions
 [ ] TODO: Use JSON + JINJA files to define presents: rendring, balls, window, for the App specific (figure out how to make this light weight)
 [ ] TODO: Create a JSON file with defaul physics parameters

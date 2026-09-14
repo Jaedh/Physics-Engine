@@ -23,7 +23,8 @@ cmake --build --preset msvc-debug
 # HIGH PRIORITY
 
 # Re-Architect 2
-[ ] TODO: Fix up the repo directory: (get rid of the cmake files or do something smart wioth it; add core, physics and render into a lib type folder; add all the )
+[ ] TODO: Fix up the repo directory: (add core, physics and render into a lib type folder; )
+[ ] TODO: Ranme core to something sensible
 [ ] TODO: Modify the build directory to be specific to each of the apps: (move the cmake into it; apps/ball-sim/ should contain: include, src, build (debug, rel ,...))
 [ ] TODO: Fix up the build directory ( get rid of all the useless files and folders); ideally just have bin, config, a single cmake folder, libs 
 [ ] TODO: Add logging

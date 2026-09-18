@@ -14,7 +14,7 @@ World::World(){
     deltaTime = 0.0f;
 };
 
-void World::step(std::vector<core::Ball>& m_balls, float aspectRatio) {
+void World::world_step(std::vector<core::Ball>& m_balls, const glm::vec2& minBounds, const glm::vec2& maxBounds) {
     const glm::vec2 gravityVector = m_gravity_dir * m_gravity_mag;
 
     // Calculate frame delta time in seconds
@@ -30,7 +30,7 @@ void World::step(std::vector<core::Ball>& m_balls, float aspectRatio) {
     // 2. Collision resolution phase
     for (size_t i = 0; i < m_balls.size(); ++i) {
         // Wall / Boundary collision
-        physics::Collision::resolveAABB(m_balls[i], aspectRatio);
+        physics::Collision::resolveAABB(m_balls[i], minBounds, maxBounds);
 
         // Circle-to-Circle collision
         for (size_t j = i + 1; j < m_balls.size(); ++j) {

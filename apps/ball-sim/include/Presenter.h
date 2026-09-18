@@ -63,7 +63,7 @@ public:
     Presenter(const std::vector<float>& circleVertices);
     ~Presenter() = default;
 
-    void pres_step(const std::vector<core::Ball>& balls, float aspectRatio);
+    void presenter_step(const std::vector<core::Ball>& balls, const glm::mat4& projection);
 };
 
 }

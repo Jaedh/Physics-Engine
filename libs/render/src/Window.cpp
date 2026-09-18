@@ -3,11 +3,12 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <glm/gtc/matrix_transform.hpp>
 
 namespace render {
 
 Window::Window(int width, int height, const char* title)
-    : m_width(width), m_height(height) {
+    : m_width(width), m_height(height), m_baseHeight(static_cast<float>(height)) {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return;
@@ -75,6 +76,7 @@ void Window::framebufferSizeCallback(GLFWwindow* window, int width, int height) 
     if (self) {
         self->m_width = width;
         self->m_height = height;
+        self->m_isResized = true;
     }
 }
 
@@ -100,6 +102,51 @@ std::pair<double, double> Window::getCursorPosition() const {
 
 std::pair<int, int> Window::getDimensions() const {
     return {m_width, m_height};
+}
+
+float Window::getAspectRatio() const {
+    if (m_height == 0) return 1.0f;
+    return static_cast<float>(m_width) / static_cast<float>(m_height);
+}
+
+glm::mat4 Window::getProjectionMatrix() const {
+    if (m_height == 0) return glm::mat4(1.0f);
+
+    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+
+    return glm::ortho(-halfWidth, halfWidth, -halfHeight, halfHeight, -1.0f, 1.0f);
+}
+
+std::pair<glm::vec2, glm::vec2> Window::getWorldBounds() const {
+    if (m_height == 0) return { glm::vec2(-1.0f), glm::vec2(1.0f) };
+
+    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+
+    return { glm::vec2(-halfWidth, -halfHeight), glm::vec2(halfWidth, halfHeight) };
+}
+
+glm::vec2 Window::screenToWorld(double xpos, double ypos) const {
+    if (m_width == 0 || m_height == 0) return glm::vec2(0.0f);
+
+    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+
+    float worldX = ((static_cast<float>(xpos) / m_width) * 2.0f - 1.0f) * halfWidth;
+    float worldY = (1.0f - (static_cast<float>(ypos) / m_height) * 2.0f) * halfHeight;
+
+    return glm::vec2(worldX, worldY);
+}
+
+bool Window::isResized() const { 
+    return m_isResized; 
+}
+
+bool Window::consumeResizeFlag() {
+    bool temp = m_isResized;
+    m_isResized = false;
+    return temp;
 }
 
 }

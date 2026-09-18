@@ -22,43 +22,46 @@ cmake --preset ball-sim-debug
 cmake --build --preset ball-sim-debug
 ```
 
-## Roadmap & TODOs
+## Roadmap & Work Breakdown
 
-### High Priority
-
-#### Performance & Logging
-* [ ] **TODO:** Add structured logging system
-* [ ] **TODO:** Add performance metrics readout in a separate terminal window
-* [ ] **TODO:** Hide console window on launch for Release builds (`-mwindows` / `/SUBSYSTEM:WINDOWS`)
-
-#### Collision Optimization & Physics Core
-* [ ] **TODO:** Test physical parameters (friction, restitution, mass) under high-volume entity stress tests
-* [ ] **TODO:** Add broad-phase collision optimizations (e.g., Spatial Hash / Quadtree) and record latency/performance metrics in logs
-* [ ] **TODO:** Add fixed time step accumulator loop to `World::step` to prevent physics tunneling at low frame rates
-* [ ] **TODO:** Implement contact manifold generation for persistent contact resolution and stacking
-
-#### Polar Coordinates
-* [ ] **TODO:** Implement math and data structures for polar coordinates centered at screen midpoint
-* [ ] **TODO:** Map <kbd>Shift</kbd> key to toggle gravity between Cartesian and Polar coordinate spaces
+### Phase 0 — Quick Wins (Unblocked)
+* [ ] **TODO:** Hide console window on launch for Release builds (`/SUBSYSTEM:WINDOWS`)
+* [ ] **TODO:** Support smooth camera pan and zoom operations via uniform transformations in `Presenter`
 
 ---
 
-### Low Priority
+### Phase 1 — Engine Foundations
+* [ ] **TODO:** Implement structured logging system (required for perf metrics and testing)
+* [ ] **TODO:** Clarify JSON template strategy (`inja` C++ library vs. Python build script) & implement JSON parser utility
+* [ ] **TODO:** Refactor `libs/core` responsibilities (split physics components from render/domain data before contact manifold updates)
 
-#### Architecture & Infrastructure
-* [ ] **TODO:** Refactor `libs/core` to give it a clearer, more defined responsibility
-* [ ] **TODO:** Implement a JSON parse function for global utility functions
-* [ ] **TODO:** Utilize JSON + Jinja templates for lightweight app presets (rendering, balls, window config)
+---
+
+### Phase 2 — Simulation Correctness & Tooling
+* [ ] **TODO:** Add fixed-timestep accumulator loop and render interpolation to `World::step`
+* [ ] **TODO:** Add Catch2 unit test target under `tests/` to establish regression baselines for integration and collisions
+* [ ] **TODO:** Test physical parameters (friction, restitution, mass) under high-volume entity stress tests
+* [ ] **TODO:** Implement debug-line rendering (velocity vectors, collision normals) to support physics debugging
+* [ ] **TODO:** Implement contact manifold generation and persistent contact resolution (positional slop / stabilization to fix jitter)
+
+---
+
+### Phase 3 — Performance Optimization
+* [ ] **TODO:** Add broad-phase collision optimization using a Spatial Hash Grid (profile before building)
+* [ ] **TODO:** Implement Instanced Rendering in `CircleRenderer` and cache shader uniform locations
+* [ ] **TODO:** Implement Memory Arena / Pool Allocator for entity management (gated on profiling data)
+
+---
+
+### Phase 4 — Data-Driven Configuration
 * [ ] **TODO:** Create a default physics parameter JSON file
-* [ ] **TODO:** Implement a Memory Arena / Pool Allocator for entity management to eliminate runtime heap allocations
-* [ ] **TODO:** Add Catch2 unit test target under `tests/` for mathematical utilities and collision primitives
+* [ ] **TODO:** Implement JSON + templating system for lightweight app presets (rendering, entity, window config)
 
-#### Rendering & Visualization
-* [ ] **TODO:** Replace raw `glDrawArrays` per-ball draw calls with Instanced Rendering in `CircleRenderer`
-* [ ] **TODO:** Render velocity vectors and collision normals as debug lines
-* [ ] **TODO:** Support smooth camera pan and zoom operations via uniform transformations in `Presenter`
+---
 
-#### UI & Interactivity
-* [ ] **TODO:** Integrate ImGui controls for adjusting gravity, restitution, and spawning balls at runtime
-* [ ] **TODO:** Implement object selection, dragging, and throwing via mouse inputs
-* [ ] **TODO:** Add simulation controls (pause, frame-by-frame step, speed multiplier)
+### Phase 5 — Interactivity & UI Polish
+* [ ] **TODO:** Integrate ImGui controls for runtime tweaks, spawning, and performance metric overlays
+* [ ] **TODO:** Refactor input handling system in `App` to eliminate duplicate edge-detection logic
+* [ ] **TODO:** Implement mouse object selection, dragging, and throwing
+* [ ] **TODO:** Add simulation state controls (pause, single frame step, speed multiplier)
+* [ ] **TODO:** Resolve gravity control key-binding strategy and implement polar coordinate gravity space (<kbd>Shift</kbd> toggle)

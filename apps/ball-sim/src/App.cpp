@@ -86,17 +86,7 @@ void App::processInput() {
 
     if (mouseIsPressed && !mouseWasPressed) {
         auto [xpos, ypos] = m_window.getCursorPosition();
-        auto [width, height] = m_window.getDimensions();
-
-        // float ndcX = (static_cast<float>(xpos) / static_cast<float>(width)) * 2.0f - 1.0f;
-        // float ndcY = 1.0f - (static_cast<float>(ypos) / static_cast<float>(height)) * 2.0f;
-
-        // glm::vec2 spawnPosition{ndcX, ndcY};
-
-        float aspectRatio = static_cast<float>(width) / static_cast<float>(height);
-        float worldX = ((static_cast<float>(xpos) / width) * 2.0f - 1.0f) * aspectRatio;
-        float worldY = 1.0f - (static_cast<float>(ypos) / height) * 2.0f;
-        glm::vec2 spawnPosition{worldX, worldY};
+        glm::vec2 spawnPosition = m_window.screenToWorld(xpos, ypos);
 
         addRandomBall(
             /*isStatic=*/std::nullopt,
@@ -106,11 +96,6 @@ void App::processInput() {
         );
     }
     mouseWasPressed = mouseIsPressed;
-}
-
-void App::processAspectRatio() {
-    auto [width, height] = m_window.getDimensions();
-    aspectRatio = static_cast<float>(width) / static_cast<float>(height);
 }
 
 void App::addBall(const core::Ball& ball) {
@@ -151,19 +136,21 @@ void App::addRandomBall(
 void App::run() {
     if (!m_window.isValid()) return;
 
-    while (!m_window.shouldClose()) {
-        // Process Input
-        processInput();
-        processAspectRatio();
+    auto [minBounds, maxBounds] = m_window.getWorldBounds();
+    glm::mat4 projection = m_window.getProjectionMatrix();
 
-        // Step World Simulation
-        m_world.step(m_balls, aspectRatio);
+    while (!m_window.shouldClose()) { 
+        processInput(); 
 
-        // Render Frame
-        m_presenter.pres_step(m_balls, aspectRatio);
+        if (m_window.consumeResizeFlag()) {
+            std::tie(minBounds, maxBounds) = m_window.getWorldBounds();
+            projection = m_window.getProjectionMatrix();
+        }
 
-        // Display
-        m_window.swapBuffers();
+        m_world.world_step(m_balls, minBounds, maxBounds);
+        m_presenter.presenter_step(m_balls, projection);
+
+        m_window.swapBuffers(); 
         m_window.pollEvents();
     }
 }

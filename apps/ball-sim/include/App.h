@@ -24,6 +24,9 @@ class App {
         float m_lastFrameTime{0.0f};
         float aspectRatio{1.0f};
 
+        float intial_width{800.0f};
+        float intial_height{800.0f};
+
         void initDefaultScene();
     public:
         App(int width, int height, std::string_view title);
@@ -34,7 +37,6 @@ class App {
 
         void run();
         void processInput();
-        void processAspectRatio();
 
         void addBall(const core::Ball& ball);
         void addRandomBall(

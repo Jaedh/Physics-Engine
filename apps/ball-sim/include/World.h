@@ -17,7 +17,7 @@ class World {
         World();
         ~World() = default;
 
-        void step(std::vector<core::Ball>& m_balls, float aspectRatio = 1.0f);
+        void world_step(std::vector<core::Ball>& m_balls, const glm::vec2& minBounds, const glm::vec2& maxBounds);
 
         void applyImpulseToAll(std::vector<core::Ball>& m_balls, const glm::vec2& impulse);
         

@@ -1,6 +1,5 @@
 # Build artifacts
-/build/
-/out/
+.build/
 apps/**/build/
 apps/**/out/
 

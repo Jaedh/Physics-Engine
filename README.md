@@ -20,15 +20,12 @@ Remove-Item -Recurse -Force -ErrorAction SilentlyContinue .build
 # Configure and compile using CMake presets
 cmake --preset ball-sim-debug
 cmake --build --preset ball-sim-debug
+
+cmake --preset ball-sim-release
+cmake --build --preset ball-sim-release
 ```
 
 ## Roadmap & Work Breakdown
-
-### Phase 0 — Quick Wins (Unblocked)
-* [ ] **TODO:** Hide console window on launch for Release builds (`/SUBSYSTEM:WINDOWS`)
-* [ ] **TODO:** Support smooth camera pan and zoom operations via uniform transformations in `Presenter`
-
----
 
 ### Phase 1 — Engine Foundations
 * [ ] **TODO:** Implement structured logging system (required for perf metrics and testing)
@@ -65,3 +62,4 @@ cmake --build --preset ball-sim-debug
 * [ ] **TODO:** Implement mouse object selection, dragging, and throwing
 * [ ] **TODO:** Add simulation state controls (pause, single frame step, speed multiplier)
 * [ ] **TODO:** Resolve gravity control key-binding strategy and implement polar coordinate gravity space (<kbd>Shift</kbd> toggle)
+* [ ] **TODO:** Support smooth camera pan and zoom operations via uniform transformations in `Presenter`

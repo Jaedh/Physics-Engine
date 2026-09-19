@@ -91,7 +91,7 @@ events:
       The output was:
       0
       MSBuild version 18.8.2+ce25c0108 for .NET Framework
-      Build started 15/09/2026 12:51:06 AM.
+      Build started 19/09/2026 7:38:41 PM.
       
       Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -120,7 +120,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.72
+      Time Elapsed 00:00:00.75
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -2656,8 +2656,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l"
-      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l"
+      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1"
+      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2672,39 +2672,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l'
+        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a2cbb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_608da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.8.2+ce25c0108 for .NET Framework
-        Build started 15/09/2026 12:51:07 AM.
+        Build started 19/09/2026 7:38:42 PM.
         
-        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\cmTC_a2cbb.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\cmTC_608da.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\Debug\\".
-          Creating directory "cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.tlog\\".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\Debug\\".
+          Creating directory "cmTC_608da.dir\\Debug\\cmTC_608da.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.tlog\\unsuccessfulbuild".
+          Creating "cmTC_608da.dir\\Debug\\cmTC_608da.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_608da.dir\\Debug\\cmTC_608da.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_a2cbb.dir\\Debug\\\\" /Fd"cmTC_a2cbb.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_608da.dir\\Debug\\\\" /Fd"cmTC_608da.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_a2cbb.dir\\Debug\\\\" /Fd"cmTC_a2cbb.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_608da.dir\\Debug\\\\" /Fd"cmTC_608da.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\Debug\\cmTC_a2cbb.exe" /INCREMENTAL /ILK:"cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l/Debug/cmTC_a2cbb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l/Debug/cmTC_a2cbb.lib" /MACHINE:X64  /machine:x64 cmTC_a2cbb.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_a2cbb.vcxproj -> C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\Debug\\cmTC_a2cbb.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\Debug\\cmTC_608da.exe" /INCREMENTAL /ILK:"cmTC_608da.dir\\Debug\\cmTC_608da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1/Debug/cmTC_608da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1/Debug/cmTC_608da.lib" /MACHINE:X64  /machine:x64 cmTC_608da.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_608da.vcxproj -> C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\Debug\\cmTC_608da.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.tlog\\unsuccessfulbuild".
-          Touching "cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.tlog\\cmTC_a2cbb.lastbuildstate".
-        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\cmTC_a2cbb.vcxproj" (default targets).
+          Deleting file "cmTC_608da.dir\\Debug\\cmTC_608da.tlog\\unsuccessfulbuild".
+          Touching "cmTC_608da.dir\\Debug\\cmTC_608da.tlog\\cmTC_608da.lastbuildstate".
+        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\cmTC_608da.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.63
+        Time Elapsed 00:00:00.83
         
       exitCode: 0
   -
@@ -2717,7 +2717,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h49o4l\\Debug\\cmTC_a2cbb.exe" /INCREMENTAL /ILK:"cmTC_a2cbb.dir\\Debug\\cmTC_a2cbb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l/Debug/cmTC_a2cbb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-h49o4l/Debug/cmTC_a2cbb.lib" /MACHINE:X64  /machine:x64 cmTC_a2cbb.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
+        link line: [  C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8rjwe1\\Debug\\cmTC_608da.exe" /INCREMENTAL /ILK:"cmTC_608da.dir\\Debug\\cmTC_608da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1/Debug/cmTC_608da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-8rjwe1/Debug/cmTC_608da.lib" /MACHINE:X64  /machine:x64 cmTC_608da.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
         linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe 
         implicit libs: []
         implicit objs: []
@@ -2752,8 +2752,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-olxont"
-      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-olxont"
+      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-sdcgtq"
+      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-sdcgtq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2767,68 +2767,68 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-olxont'
+        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-sdcgtq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8c986.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9c76d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.8.2+ce25c0108 for .NET Framework
-        Build started 15/09/2026 12:51:08 AM.
+        Build started 19/09/2026 7:38:44 PM.
         
-        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\Debug\\".
-          Creating directory "cmTC_8c986.dir\\Debug\\cmTC_8c986.tlog\\".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\Debug\\".
+          Creating directory "cmTC_9c76d.dir\\Debug\\cmTC_9c76d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_8c986.dir\\Debug\\cmTC_8c986.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_8c986.dir\\Debug\\cmTC_8c986.tlog\\unsuccessfulbuild".
+          Creating "cmTC_9c76d.dir\\Debug\\cmTC_9c76d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9c76d.dir\\Debug\\cmTC_9c76d.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_8c986.dir\\Debug\\cmTC_8c986_MD.tlog\\".
+          Creating directory "cmTC_9c76d.dir\\Debug\\cmTC_9c76d_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8c986.dir\\Debug\\\\" /scanDependencies "cmTC_8c986.dir\\Debug\\\\" /Fo"cmTC_8c986.dir\\Debug\\\\" /Fd"cmTC_8c986.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9c76d.dir\\Debug\\\\" /scanDependencies "cmTC_9c76d.dir\\Debug\\\\" /Fo"cmTC_9c76d.dir\\Debug\\\\" /Fd"cmTC_9c76d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx"
+        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
-        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8c986.dir\\Debug\\\\" /scanDependencies "cmTC_8c986.dir\\Debug\\\\" /Fo"cmTC_8c986.dir\\Debug\\\\" /Fd"cmTC_8c986.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9c76d.dir\\Debug\\\\" /scanDependencies "cmTC_9c76d.dir\\Debug\\\\" /Fo"cmTC_9c76d.dir\\Debug\\\\" /Fd"cmTC_9c76d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx"
           src.cxx
-        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_8c986.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
+        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_9c76d.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8c986.dir\\Debug\\\\" /Fo"cmTC_8c986.dir\\Debug\\\\" /Fd"cmTC_8c986.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_8c986.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9c76d.dir\\Debug\\\\" /Fo"cmTC_9c76d.dir\\Debug\\\\" /Fd"cmTC_9c76d.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_9c76d.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8c986.dir\\Debug\\\\" /Fo"cmTC_8c986.dir\\Debug\\\\" /Fd"cmTC_8c986.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_8c986.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9c76d.dir\\Debug\\\\" /Fo"cmTC_9c76d.dir\\Debug\\\\" /Fd"cmTC_9c76d.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_9c76d.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx"
           src.cxx
-        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
-        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
+        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj" (default target) (1) ->
+        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj" (default target) (1) ->
         (SetModuleDependencies target) -> 
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_8c986.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_9c76d.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
         
         
-        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj" (default target) (1) ->
+        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj" (default target) (1) ->
         (SetModuleDependencies target) -> 
-          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
-          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
+          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
+          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
         
         
-        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj" (default target) (1) ->
+        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-olxont\\cmTC_8c986.vcxproj]
+          C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdcgtq\\cmTC_9c76d.vcxproj]
         
             1 Warning(s)
             3 Error(s)
         
-        Time Elapsed 00:00:00.53
+        Time Elapsed 00:00:00.74
         
       exitCode: 1
   -
@@ -2846,8 +2846,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-hyhbwi"
-      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-hyhbwi"
+      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-edvmqz"
+      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-edvmqz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2861,56 +2861,56 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-hyhbwi'
+        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-edvmqz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9fb74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e2da2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.8.2+ce25c0108 for .NET Framework
-        Build started 15/09/2026 12:51:09 AM.
+        Build started 19/09/2026 7:38:45 PM.
         
-        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\Debug\\".
-          Creating directory "cmTC_9fb74.dir\\Debug\\cmTC_9fb74.tlog\\".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\Debug\\".
+          Creating directory "cmTC_e2da2.dir\\Debug\\cmTC_e2da2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9fb74.dir\\Debug\\cmTC_9fb74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9fb74.dir\\Debug\\cmTC_9fb74.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e2da2.dir\\Debug\\cmTC_e2da2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e2da2.dir\\Debug\\cmTC_e2da2.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_9fb74.dir\\Debug\\cmTC_9fb74_MD.tlog\\".
+          Creating directory "cmTC_e2da2.dir\\Debug\\cmTC_e2da2_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9fb74.dir\\Debug\\\\" /scanDependencies "cmTC_9fb74.dir\\Debug\\\\" /Fo"cmTC_9fb74.dir\\Debug\\\\" /Fd"cmTC_9fb74.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2da2.dir\\Debug\\\\" /scanDependencies "cmTC_e2da2.dir\\Debug\\\\" /Fo"cmTC_e2da2.dir\\Debug\\\\" /Fd"cmTC_e2da2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9fb74.dir\\Debug\\\\" /scanDependencies "cmTC_9fb74.dir\\Debug\\\\" /Fo"cmTC_9fb74.dir\\Debug\\\\" /Fd"cmTC_9fb74.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2da2.dir\\Debug\\\\" /scanDependencies "cmTC_e2da2.dir\\Debug\\\\" /Fo"cmTC_e2da2.dir\\Debug\\\\" /Fd"cmTC_e2da2.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9fb74.dir\\Debug\\\\" /Fo"cmTC_9fb74.dir\\Debug\\\\" /Fd"cmTC_9fb74.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_9fb74.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2da2.dir\\Debug\\\\" /Fo"cmTC_e2da2.dir\\Debug\\\\" /Fd"cmTC_e2da2.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_e2da2.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_9fb74.dir\\Debug\\\\" /Fo"cmTC_9fb74.dir\\Debug\\\\" /Fd"cmTC_9fb74.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_9fb74.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2da2.dir\\Debug\\\\" /Fo"cmTC_e2da2.dir\\Debug\\\\" /Fd"cmTC_e2da2.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_e2da2.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\Debug\\cmTC_9fb74.exe" /INCREMENTAL /ILK:"cmTC_9fb74.dir\\Debug\\cmTC_9fb74.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-hyhbwi/Debug/cmTC_9fb74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-hyhbwi/Debug/cmTC_9fb74.lib" /MACHINE:X64  /machine:x64 cmTC_9fb74.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.vcxproj]
-        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\Debug\\cmTC_e2da2.exe" /INCREMENTAL /ILK:"cmTC_e2da2.dir\\Debug\\cmTC_e2da2.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-edvmqz/Debug/cmTC_e2da2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-edvmqz/Debug/cmTC_e2da2.lib" /MACHINE:X64  /machine:x64 cmTC_e2da2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.vcxproj]
+        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.vcxproj" (default target) (1) ->
+        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hyhbwi\\cmTC_9fb74.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-edvmqz\\cmTC_e2da2.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.58
+        Time Elapsed 00:00:00.60
         
       exitCode: 1
   -
@@ -2928,8 +2928,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-t05d0t"
-      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-t05d0t"
+      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-skh40q"
+      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-skh40q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2943,56 +2943,56 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-t05d0t'
+        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-skh40q'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8d0d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0f636.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.8.2+ce25c0108 for .NET Framework
-        Build started 15/09/2026 12:51:10 AM.
+        Build started 19/09/2026 7:38:46 PM.
         
-        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\Debug\\".
-          Creating directory "cmTC_d8d0d.dir\\Debug\\cmTC_d8d0d.tlog\\".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\Debug\\".
+          Creating directory "cmTC_0f636.dir\\Debug\\cmTC_0f636.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_d8d0d.dir\\Debug\\cmTC_d8d0d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_d8d0d.dir\\Debug\\cmTC_d8d0d.tlog\\unsuccessfulbuild".
+          Creating "cmTC_0f636.dir\\Debug\\cmTC_0f636.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0f636.dir\\Debug\\cmTC_0f636.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_d8d0d.dir\\Debug\\cmTC_d8d0d_MD.tlog\\".
+          Creating directory "cmTC_0f636.dir\\Debug\\cmTC_0f636_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8d0d.dir\\Debug\\\\" /scanDependencies "cmTC_d8d0d.dir\\Debug\\\\" /Fo"cmTC_d8d0d.dir\\Debug\\\\" /Fd"cmTC_d8d0d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_0f636.dir\\Debug\\\\" /scanDependencies "cmTC_0f636.dir\\Debug\\\\" /Fo"cmTC_0f636.dir\\Debug\\\\" /Fd"cmTC_0f636.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8d0d.dir\\Debug\\\\" /scanDependencies "cmTC_d8d0d.dir\\Debug\\\\" /Fo"cmTC_d8d0d.dir\\Debug\\\\" /Fd"cmTC_d8d0d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_0f636.dir\\Debug\\\\" /scanDependencies "cmTC_0f636.dir\\Debug\\\\" /Fo"cmTC_0f636.dir\\Debug\\\\" /Fd"cmTC_0f636.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8d0d.dir\\Debug\\\\" /Fo"cmTC_d8d0d.dir\\Debug\\\\" /Fd"cmTC_d8d0d.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_d8d0d.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_0f636.dir\\Debug\\\\" /Fo"cmTC_0f636.dir\\Debug\\\\" /Fd"cmTC_0f636.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_0f636.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8d0d.dir\\Debug\\\\" /Fo"cmTC_d8d0d.dir\\Debug\\\\" /Fd"cmTC_d8d0d.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_d8d0d.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_0f636.dir\\Debug\\\\" /Fo"cmTC_0f636.dir\\Debug\\\\" /Fd"cmTC_0f636.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_0f636.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\Debug\\cmTC_d8d0d.exe" /INCREMENTAL /ILK:"cmTC_d8d0d.dir\\Debug\\cmTC_d8d0d.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-t05d0t/Debug/cmTC_d8d0d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-t05d0t/Debug/cmTC_d8d0d.lib" /MACHINE:X64  /machine:x64 cmTC_d8d0d.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.vcxproj]
-        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\Debug\\cmTC_0f636.exe" /INCREMENTAL /ILK:"cmTC_0f636.dir\\Debug\\cmTC_0f636.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-skh40q/Debug/cmTC_0f636.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-skh40q/Debug/cmTC_0f636.lib" /MACHINE:X64  /machine:x64 cmTC_0f636.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.vcxproj]
+        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.vcxproj" (default target) (1) ->
+        "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t05d0t\\cmTC_d8d0d.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-skh40q\\cmTC_0f636.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.56
+        Time Elapsed 00:00:00.66
         
       exitCode: 1
   -
@@ -3551,986 +3551,4 @@ events:
         - "C:/Program Files/CMake"
         - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
       CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "LAST"
-      SearchAppBundle: "LAST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug"
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-      ENV{PATH}:
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files\\Tailscale\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Jaedh\\PyCharm 2025.3.1\\bin"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Roaming\\npm"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WinGet\\Links"
-      CMAKE_INSTALL_PREFIX: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
-      CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS;/EHsc
-      Id flags:  
-      
-      The output was:
-      0
-      MSBuild version 18.8.2+ce25c0108 for .NET Framework
-      Build started 15/09/2026 12:53:49 AM.
-      
-      Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
-      PrepareForBuild:
-        Creating directory "Debug\\".
-        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-        Creating directory "Debug\\CompilerIdCXX.tlog\\".
-      InitializeBuildStatus:
-        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-      ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
-        CMakeCXXCompilerId.cpp
-      Link:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.exe
-      PostBuildEvent:
-        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
-        :VCEnd
-        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe
-      FinalizeBuildStatus:
-        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
-      
-      Build succeeded.
-          0 Warning(s)
-          0 Error(s)
-      
-      Time Elapsed 00:00:00.69
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
-      
-      The CXX compiler identification is MSVC, found in:
-        C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/4.4.1/CompilerIdCXX/CompilerIdCXX.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:102 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "LAST"
-      SearchAppBundle: "LAST"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "link"
-    candidate_directories:
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/MinGW/bin/"
-      - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Tailscale/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-    searched_directories:
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
-    search_context:
-      CMAKE_PROGRAM_PATH:
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/tools"
-      CMAKE_PREFIX_PATH:
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug"
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-      ENV{PATH}:
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files\\Tailscale\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Jaedh\\PyCharm 2025.3.1\\bin"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Roaming\\npm"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WinGet\\Links"
-      CMAKE_INSTALL_PREFIX: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
-      CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "LAST"
-      SearchAppBundle: "LAST"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lld-link"
-    candidate_directories:
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/Microsoft SQL Server/120/Tools/Binn/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/MinGW/bin/"
-      - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Tailscale/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Jaedh/PyCharm 2025.3.1/bin/"
-      - "C:/Users/Jaedh/AppData/Roaming/npm/"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/"
-    searched_directories:
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/wbem/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Windows/System32/OpenSSH/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/dotnet/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/CMake/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/MinGW/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/nodejs/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Tailscale/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files/Git/cmd/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Roaming/npm/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/wbem/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Windows/System32/OpenSSH/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/dotnet/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/CMake/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/MinGW/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/ProgramData/chocolatey/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/nodejs/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Tailscale/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files/Git/cmd/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Roaming/npm/lld-link"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
-      - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Windows/System32/lld-link.com"
-      - "C:/Windows/System32/lld-link.exe"
-      - "C:/Windows/System32/lld-link"
-      - "C:/Windows/lld-link.com"
-      - "C:/Windows/lld-link.exe"
-      - "C:/Windows/lld-link"
-      - "C:/Windows/System32/wbem/lld-link.com"
-      - "C:/Windows/System32/wbem/lld-link.exe"
-      - "C:/Windows/System32/wbem/lld-link"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Windows/System32/OpenSSH/lld-link"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
-      - "C:/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.com"
-      - "C:/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link.exe"
-      - "C:/Program Files/Microsoft SQL Server/120/Tools/Binn/lld-link"
-      - "C:/Program Files/dotnet/lld-link.com"
-      - "C:/Program Files/dotnet/lld-link.exe"
-      - "C:/Program Files/dotnet/lld-link"
-      - "C:/Program Files/CMake/bin/lld-link.com"
-      - "C:/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Program Files/CMake/bin/lld-link"
-      - "C:/MinGW/bin/lld-link.com"
-      - "C:/MinGW/bin/lld-link.exe"
-      - "C:/MinGW/bin/lld-link"
-      - "C:/ProgramData/chocolatey/bin/lld-link.com"
-      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
-      - "C:/ProgramData/chocolatey/bin/lld-link"
-      - "C:/Program Files/nodejs/lld-link.com"
-      - "C:/Program Files/nodejs/lld-link.exe"
-      - "C:/Program Files/nodejs/lld-link"
-      - "C:/Program Files/Tailscale/lld-link.com"
-      - "C:/Program Files/Tailscale/lld-link.exe"
-      - "C:/Program Files/Tailscale/lld-link"
-      - "C:/Program Files/Git/cmd/lld-link.com"
-      - "C:/Program Files/Git/cmd/lld-link.exe"
-      - "C:/Program Files/Git/cmd/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Python314/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Python/Launcher/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.com"
-      - "C:/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link.exe"
-      - "C:/Users/Jaedh/PyCharm 2025.3.1/bin/lld-link"
-      - "C:/Users/Jaedh/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Roaming/npm/lld-link"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
-      - "C:/Users/Jaedh/AppData/Local/Microsoft/WinGet/Links/lld-link"
-    found: false
-    search_context:
-      CMAKE_PROGRAM_PATH:
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/tools"
-      CMAKE_PREFIX_PATH:
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug"
-        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-      ENV{PATH}:
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
-        - "C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files\\Tailscale\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Jaedh\\PyCharm 2025.3.1\\bin"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Jaedh\\AppData\\Roaming\\npm"
-        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WinGet\\Links"
-      CMAKE_INSTALL_PREFIX: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
-      CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting CXX compiler ABI info"
-    directories:
-      source: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz"
-      binary: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      VCPKG_INSTALLED_DIR: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed"
-      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
-      VCPKG_TARGET_TRIPLET: "x64-windows"
-      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
-    buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: false
-      stdout: |
-        Change Dir: 'C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_eaf3f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        MSBuild version 18.8.2+ce25c0108 for .NET Framework
-        Build started 15/09/2026 12:53:50 AM.
-        
-        Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\cmTC_eaf3f.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\Debug\\".
-          Creating directory "cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_eaf3f.dir\\Debug\\\\" /Fd"cmTC_eaf3f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36252 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_eaf3f.dir\\Debug\\\\" /Fd"cmTC_eaf3f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
-          CMakeCXXCompilerABI.cpp
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\Debug\\cmTC_eaf3f.exe" /INCREMENTAL /ILK:"cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz/Debug/cmTC_eaf3f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz/Debug/cmTC_eaf3f.lib" /MACHINE:X64  /machine:x64 cmTC_eaf3f.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_eaf3f.vcxproj -> C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\Debug\\cmTC_eaf3f.exe
-        FinalizeBuildStatus:
-          Deleting file "cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.tlog\\unsuccessfulbuild".
-          Touching "cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.tlog\\cmTC_eaf3f.lastbuildstate".
-        Done Building Project "C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\cmTC_eaf3f.vcxproj" (default targets).
-        
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
-        
-        Time Elapsed 00:00:00.57
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Jaedh\\Documents\\04 STEM\\02 Programming\\Physics-Engine\\.build\\ball-sim-debug\\CMakeFiles\\CMakeScratch\\TryCompile-81b1hz\\Debug\\cmTC_eaf3f.exe" /INCREMENTAL /ILK:"cmTC_eaf3f.dir\\Debug\\cmTC_eaf3f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz/Debug/cmTC_eaf3f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/CMakeFiles/CMakeScratch/TryCompile-81b1hz/Debug/cmTC_eaf3f.lib" /MACHINE:X64  /machine:x64 cmTC_eaf3f.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
-        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe 
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.51.36252.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
 ...

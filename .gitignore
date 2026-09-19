@@ -2,6 +2,7 @@
 .build/
 apps/**/build/
 apps/**/out/
+apps/**/bin/
 
 # vcpkg
 vcpkg_installed/

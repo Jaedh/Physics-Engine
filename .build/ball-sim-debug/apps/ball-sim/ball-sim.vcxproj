@@ -66,19 +66,19 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\debug\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ball-sim.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ball-sim</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\debug\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\minsizerel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ball-sim.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ball-sim</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\debug\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\apps\ball-sim\bin\relwithdebinfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ball-sim.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ball-sim</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -197,7 +197,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/Release/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
+C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/release/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -211,14 +211,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/Release/ball-sim.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/Release/ball-sim.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/release/ball-sim.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -267,7 +268,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/MinSizeRel/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
+C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/minsizerel/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -286,7 +287,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/MinSizeRel/ball-sim.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/MinSizeRel/ball-sim.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/minsizerel/ball-sim.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -336,7 +337,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/RelWithDebInfo/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
+C:\vcpkg\vcpkg.exe z-applocal "--target-binary=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/relwithdebinfo/ball-sim.exe" "--installed-bin-dir=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/bin"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -355,7 +356,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/apps/ball-sim/RelWithDebInfo/ball-sim.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug/RelWithDebInfo/ball-sim.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/relwithdebinfo/ball-sim.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>

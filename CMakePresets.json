@@ -10,28 +10,33 @@
       "binaryDir": "${sourceDir}/.build/ball-sim-debug",
       "installDir": "${sourceDir}/apps/ball-sim/out/debug",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-        "VCPKG_TARGET_TRIPLET": "x64-windows",
-        "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/apps/ball-sim/bin/debug",
-        "CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/apps/ball-sim/bin/debug"
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
       }
     },
     {
       "name": "ball-sim-release",
       "displayName": "Ball Sim (Release)",
-      "inherits": "ball-sim-debug",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
       "binaryDir": "${sourceDir}/.build/ball-sim-release",
       "installDir": "${sourceDir}/apps/ball-sim/out/release",
       "cacheVariables": { 
-        "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/apps/ball-sim/bin/release",
-        "CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/apps/ball-sim/bin/release"
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
       }
     }
   ],
   "buildPresets": [
-    { "name": "ball-sim-debug", "configurePreset": "ball-sim-debug" },
-    { "name": "ball-sim-release", "configurePreset": "ball-sim-release" }
+    { 
+      "name": "ball-sim-debug", 
+      "configurePreset": "ball-sim-debug",
+      "configuration": "Debug"
+    },
+    { 
+      "name": "ball-sim-release", 
+      "configurePreset": "ball-sim-release",
+      "configuration": "Release"
+    }
   ]
 }

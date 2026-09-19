@@ -63,6 +63,14 @@ void App::processInput() {
     }
     rightWasPressed = rightIsPressed;
 
+    // SHIFT: Turn off gravity (set to zero)
+    static bool shiftWasPressed = false;
+    bool shiftIsPressed = m_window.isKeyPressed(GLFW_KEY_LEFT_SHIFT) || m_window.isKeyPressed(GLFW_KEY_RIGHT_SHIFT);
+    if (shiftIsPressed && !shiftWasPressed) {
+        m_world.setGravityDirection(glm::vec2(0.0f, 0.0f));
+    }
+    shiftWasPressed = shiftIsPressed;
+
     // C: Delete all balls
     static bool cWasPressed = false;
     bool cIsPressed = m_window.isKeyPressed(GLFW_KEY_C);

@@ -17,11 +17,6 @@
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe
 
-//Build type for single-configuration generators (Makefile Generators,
-// Ninja, etc.). Typical values: Debug, Release, RelWithDebInfo,
-// MinSizeRel; custom build types may also be defined.
-CMAKE_BUILD_TYPE:UNINITIALIZED=Debug
-
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
 // else will be ignored.
@@ -128,12 +123,6 @@ CMAKE_RC_FLAGS_RELEASE:STRING=
 //Flags for Windows Resource Compiler during RELWITHDEBINFO builds.
 CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
-//Where to put all RUNTIME target files when built
-CMAKE_RUNTIME_OUTPUT_DIRECTORY:UNINITIALIZED=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug
-
-//Initializes RUNTIME_OUTPUT_DIRECTORY_<CONFIG> target property.
-CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG:UNINITIALIZED=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/bin/debug
-
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
 CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
@@ -181,10 +170,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Path to a CMake toolchain file, read early in the CMake run,
-// that specifies the compilers, toolchain utilities, and target-platform
-// information used when cross-compiling.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:\vcpkg/scripts/buildsystems/vcpkg.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console

@@ -8,6 +8,7 @@
 #include <imgui_impl_opengl3.h>
 
 #include "core/utils/Logger.h"
+#include "render/MetricsOverlay.h"
 
 namespace ball_sim {
 
@@ -40,7 +41,7 @@ void Presenter::presenter_step(const std::vector<core::Ball>& balls, const glm::
         m_circleRenderer.draw();
     }
 
-    renderSimpleTimeOverlay();
+    // renderSimpleTimeOverlay();
 }
 
 void Presenter::renderSimpleTimeOverlay() {

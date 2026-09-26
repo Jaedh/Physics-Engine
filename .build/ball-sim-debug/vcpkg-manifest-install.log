@@ -2,27 +2,15 @@ Detecting compiler hash for triplet x64-windows...
 Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
 The following packages are already installed:
   * egl-registry:x64-windows@2025-05-27
+  * fmt:x64-windows@12.2.0#1
     glad[core,loader]:x64-windows@0.1.36
     glfw3:x64-windows@3.4#1
     glm:x64-windows@1.0.3
     imgui[core,opengl3-binding,glfw-binding]:x64-windows@1.92.8#1
   * opengl-registry:x64-windows@2026-01-26
+    spdlog[core,tz-offset,fmt]:x64-windows@1.17.0#1
   * vcpkg-cmake:x64-windows@2024-04-23
   * vcpkg-cmake-config:x64-windows@2026-07-21
-The following packages will be built and installed:
-  * fmt:x64-windows@12.2.0#1
-    spdlog[core,fmt,tz-offset]:x64-windows@1.17.0#1
-Additional packages (*) will be modified to complete this operation.
-Restored 2 package(s) from C:\Users\Jaedh\AppData\Local\vcpkg\archives in 346 ms. Use --debug to see more details.
-Installing 1/2 fmt:x64-windows@12.2.0#1...
-fmt:x64-windows@12.2.0#1 package ABI: e1c0ce513363e4af4eacf547a9143f918fe82fb67d0a8e5cdbd495abb390adb9
-Elapsed time to handle fmt:x64-windows: 170 ms
-Installing 2/2 spdlog[core,fmt,tz-offset]:x64-windows@1.17.0#1...
-spdlog[core,fmt,tz-offset]:x64-windows@1.17.0#1 package ABI: 98fb20d8671fefd773cf4bc7d6f422081b63beeefa6ac00eb8640fba3a8a31ea
-Elapsed time to handle spdlog:x64-windows: 205 ms
-Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
-Packages installed in this vcpkg installation declare the following licenses:
-MIT
 glad provides CMake targets:
 
   # this is heuristically generated, and may not be correct
@@ -64,4 +52,4 @@ The package spdlog provides CMake targets:
     find_package(spdlog CONFIG REQUIRED)
     target_link_libraries(main PRIVATE spdlog::spdlog_header_only)
 
-All requested installations completed successfully in: 392 ms
+All requested installations completed successfully in: 426 us

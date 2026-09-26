@@ -10,6 +10,9 @@
     <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\CircleRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\MetricsOverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\CMakeLists.txt" />

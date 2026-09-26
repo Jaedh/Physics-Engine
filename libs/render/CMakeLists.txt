@@ -2,6 +2,7 @@ add_library(render STATIC
     src/Window.cpp
     src/Shader.cpp
     src/CircleRenderer.cpp
+    src/MetricsOverlay.cpp
 )
 
 target_include_directories(render PUBLIC

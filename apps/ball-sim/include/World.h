@@ -26,6 +26,7 @@ class World {
 
         glm::vec2 getGravityDirection() const;
         float getGravityMagnitude() const;
+        float getDeltaTime() const;
 
 };
 

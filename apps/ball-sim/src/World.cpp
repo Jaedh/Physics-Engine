@@ -73,4 +73,9 @@ float World::getGravityMagnitude() const {
     return m_gravity_mag;
 }
 
+float World::getDeltaTime() const { 
+    return deltaTime;
+ }
+
+
 } // namespace ball_sim

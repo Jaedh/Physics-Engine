@@ -44,13 +44,6 @@ Window::Window(int width, int height, const char* title)
         return;
     }
 
-    IMGUI_CHECKVERSION();
-    ImGui::CreateContext();
-    ImGui::StyleColorsDark();
-
-    ImGui_ImplGlfw_InitForOpenGL(m_window, true);
-    ImGui_ImplOpenGL3_Init("#version 460");
-
     LOG_INFO("OpenGL Context Created Successfully.");
     LOG_INFO("Vendor:   {}", reinterpret_cast<const char*>(glGetString(GL_VENDOR)));
     LOG_INFO("Renderer: {}", reinterpret_cast<const char*>(glGetString(GL_RENDERER)));
@@ -63,10 +56,6 @@ Window::~Window() {
         glfwDestroyWindow(m_window);
     }
     glfwTerminate();
-
-    ImGui_ImplOpenGL3_Shutdown();
-    ImGui_ImplGlfw_Shutdown();
-    ImGui::DestroyContext();
 }
 
 bool Window::isValid() const { 

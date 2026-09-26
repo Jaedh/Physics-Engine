@@ -5,14 +5,20 @@
 
 #include "core/math/CircleGeometry.hpp"
 #include "core/utils/Logger.h"
+#include "core/utils/Profiler.h"
+#include "render/MetricsOverlay.h"
 
 namespace ball_sim {
 
+    // TODO: make this file ligher somehow
+    // TODO: Make this intialiser better based on a congif file
 App::App(int width, int height, std::string_view title)
     : m_window(width, height, title.data()),
+      m_metricsOverlay(m_window.getNativeWindow()),
       m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 128)) {
     
     LOG_INFO("Initializing App with window resolution {}x{} and title '{}'", width, height, title);
+    
     aspectRatio = m_window.getAspectRatio();
     initDefaultScene();
     LOG_INFO("App subsystem successfully initialized.");
@@ -166,6 +172,7 @@ void App::addRandomBall(
     addBall(ball);
 }
 
+// TODO: Offload some of the logic from the main loop to this function to keep it cleaner
 void App::run() {
     if (!m_window.isValid()) {
         LOG_ERROR("Cannot run application loop: GLFW window handle is invalid.");
@@ -188,7 +195,10 @@ void App::run() {
         }
 
         m_world.world_step(m_balls, minBounds, maxBounds);
+        core::util::Profiler::instance().update(m_world.getDeltaTime());
+
         m_presenter.presenter_step(m_balls, projection);
+        m_metricsOverlay.draw();
 
         m_window.swapBuffers(); 
         m_window.pollEvents();

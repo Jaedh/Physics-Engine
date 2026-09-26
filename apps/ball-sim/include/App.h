@@ -8,6 +8,7 @@
 #include <glm/vec4.hpp>
 
 #include "render/Window.h"
+#include "render/MetricsOverlay.h"
 #include "core/objects/Ball.h"
 #include "World.h"
 #include "Presenter.h"
@@ -17,6 +18,7 @@ namespace ball_sim {
 class App {
     private:
         render::Window m_window;
+        render::MetricsOverlay m_metricsOverlay; 
         World m_world;
         Presenter m_presenter;
         std::vector<core::Ball> m_balls;

@@ -3552,3 +3552,291 @@ events:
         - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
       CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - ".build/ball-sim-debug/vcpkg_installed/x64-windows/share/spdlog/spdlogConfig.cmake:38 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "libs/core/CMakeLists.txt:7 (find_package)"
+    name: "fmt"
+    configs:
+      -
+        filename: "fmt.cps"
+        kind: "cps"
+      -
+        filename: "fmtConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "fmt-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "fmt"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/fmt/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/fmt/fmt-config.cmake"
+      mode: "config"
+      version: "12.2.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug"
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
+      ENV{PATH}:
+        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Jaedh\\PyCharm 2025.3.1\\bin"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Jaedh\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WinGet\\Links"
+      CMAKE_INSTALL_PREFIX: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
+      - "libs/core/CMakeLists.txt:7 (find_package)"
+    name: "spdlog"
+    configs:
+      -
+        filename: "spdlog.cps"
+        kind: "cps"
+      -
+        filename: "spdlogConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "spdlog-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "spdlog"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/spdlogConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/spdlog-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/lib/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/share/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/spdlogConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/spdlog-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/lib/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug/share/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/spdlogConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/spdlog-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/lib/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/cps/spdlog.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/spdlog/spdlogConfig.cmake"
+      mode: "config"
+      version: "1.17.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug"
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
+      ENV{PATH}:
+        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Jaedh\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Jaedh\\PyCharm 2025.3.1\\bin"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Jaedh\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Jaedh\\AppData\\Local\\Microsoft\\WinGet\\Links"
+      CMAKE_INSTALL_PREFIX: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/apps/ball-sim/out/debug"
+      CMAKE_FIND_ROOT_PATH: "C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/debug;C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows"
+...

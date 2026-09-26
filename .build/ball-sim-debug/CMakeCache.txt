@@ -170,8 +170,10 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/vcpkg/scripts/buildsystems/vcpkg.cmake
+//Path to a CMake toolchain file, read early in the CMake run,
+// that specifies the compilers, toolchain utilities, and target-platform
+// information used when cross-compiling.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:\vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -244,6 +246,9 @@ X_VCPKG_APPLOCAL_DEPS_SERIALIZED:BOOL=OFF
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed
 
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/fmt
+
 //The directory containing a CMake configuration file for glad.
 glad_DIR:PATH=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/glad
 
@@ -264,6 +269,9 @@ physics-lab_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 physics-lab_SOURCE_DIR:STATIC=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=C:/Users/Jaedh/Documents/04 STEM/02 Programming/Physics-Engine/.build/ball-sim-debug/vcpkg_installed/x64-windows/share/spdlog
 
 
 ########################

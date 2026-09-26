@@ -28,8 +28,11 @@ cmake --build --preset ball-sim-release
 ## Roadmap & Work Breakdown
 
 ### Phase 1 — Engine Foundations
-* [ ] **TODO:** Implement structured logging system (required for perf metrics and testing)
-* [ ] **TODO:** Clarify JSON template strategy (`inja` C++ library vs. Python build script) & implement JSON parser utility
+* [ ] **TODO:** Implement structured logging system (required for perf metrics and testing) 
+* [ ] **TODO:** Modify the initialisation of an App using a JSON structred config
+* [ ] **TODO:** Add a config directory and parse in any of the premade configs, have a default config, a few edge test configs
+* [ ] **TODO:** Add a maximum log level to the config (so debug max would show debug, info, ...)
+* [ ] **TODO:** Allow the configs to be changes based on a arguments being parsed in, like chnage max log level and stuff
 * [ ] **TODO:** Refactor `libs/core` responsibilities (split physics components from render/domain data before contact manifold updates)
 
 ---
@@ -40,6 +43,9 @@ cmake --build --preset ball-sim-release
 * [ ] **TODO:** Test physical parameters (friction, restitution, mass) under high-volume entity stress tests
 * [ ] **TODO:** Implement debug-line rendering (velocity vectors, collision normals) to support physics debugging
 * [ ] **TODO:** Implement contact manifold generation and persistent contact resolution (positional slop / stabilization to fix jitter)
+
+---
+* [ ] **TODO:** Do a gitingest re-architect
 
 ---
 

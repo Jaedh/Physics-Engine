@@ -30,7 +30,7 @@ class App {
         void initDefaultScene();
     public:
         App(int width, int height, std::string_view title);
-        ~App() = default;
+        ~App();
 
         App(const App&) = delete;
         App& operator=(const App&) = delete;

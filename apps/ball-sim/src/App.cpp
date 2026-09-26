@@ -4,20 +4,29 @@
 #include <random>
 
 #include "core/math/CircleGeometry.hpp"
+#include "core/utils/Logger.h"
 
 namespace ball_sim {
 
+    // TOD): remove the utility function and make this more robust with the config 
 App::App(int width, int height, std::string_view title)
     : m_window(width, height, title.data()),
       m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 128)) {
     
     initDefaultScene();
+
+    // TOOD: add logging to this
 }
 
 void App::initDefaultScene() {
     for(int i = 0; i < 30; ++i) {
         addRandomBall();
     }
+}
+
+App::~App() {
+    LOG_INFO("Shutting down App subsystem...");
+    glfwTerminate();
 }
 
 void App::processInput() {
@@ -147,6 +156,7 @@ void App::run() {
     auto [minBounds, maxBounds] = m_window.getWorldBounds();
     glm::mat4 projection = m_window.getProjectionMatrix();
 
+    LOG_INFO("Entering main application loop.");
     while (!m_window.shouldClose()) { 
         processInput(); 
 
@@ -161,6 +171,8 @@ void App::run() {
         m_window.swapBuffers(); 
         m_window.pollEvents();
     }
+
+    LOG_INFO("Main loop exited.");
 }
 
 } // namespace ball_sim

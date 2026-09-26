@@ -4,8 +4,11 @@ target_include_directories(core INTERFACE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+find_package(spdlog CONFIG REQUIRED)
+
 target_link_libraries(core INTERFACE
     glm::glm
+    spdlog::spdlog
 )
 
 install(DIRECTORY include/ DESTINATION include)

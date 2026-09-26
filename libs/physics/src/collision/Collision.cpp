@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <glm/geometric.hpp>
+#include "core/utils/Logger.h"
 
 namespace physics {
 
@@ -58,6 +59,8 @@ void Collision::resolveCircleToCircle(core::Ball& a, core::Ball& b) {
 
     a.velocity -= normal * (impulseMagnitude * a.inv_mass);
     b.velocity += normal * (impulseMagnitude * b.inv_mass);
+
+    // LOG_DEBUG("Circle Collision Resolved between Ball ID {} and Ball ID {}, overlap={:.4f}", a.id, b.id, overlap);
 }
 
 } // namespace physics

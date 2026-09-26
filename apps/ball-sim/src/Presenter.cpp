@@ -2,6 +2,10 @@
 
 #include <glad/glad.h>
 #include <glm/gtc/matrix_transform.hpp>
+#include <GLFW/glfw3.h>
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
 #include "core/utils/Logger.h"
 
@@ -35,6 +39,44 @@ void Presenter::presenter_step(const std::vector<core::Ball>& balls, const glm::
         m_shader.setVec4("uColor", ball.color);
         m_circleRenderer.draw();
     }
+
+    renderSimpleTimeOverlay();
+}
+
+void Presenter::renderSimpleTimeOverlay() {
+    // Start ImGui frame
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+
+    // Configure overlay position (top-left corner, 10px margin)
+    ImGui::SetNextWindowPos(ImVec2(10.0f, 10.0f), ImGuiCond_Always);
+    ImGui::SetNextWindowBgAlpha(0.35f); // Semi-transparent background
+
+    // Create a frameless, non-interactive overlay window
+    ImGuiWindowFlags windowFlags = 
+        ImGuiWindowFlags_NoDecoration | 
+        ImGuiWindowFlags_AlwaysAutoResize | 
+        ImGuiWindowFlags_NoSavedSettings | 
+        ImGuiWindowFlags_NoFocusOnAppearing | 
+        ImGuiWindowFlags_NoNav | 
+        ImGuiWindowFlags_NoMove;
+
+    if (ImGui::Begin("Simple Time Display", nullptr, windowFlags)) {
+        float totalTime = static_cast<float>(glfwGetTime());
+        float frameMs = 1000.0f / ImGui::GetIO().Framerate;
+
+        ImGui::TextColored(ImVec4(0.2f, 0.8f, 1.0f, 1.0f), "SYSTEM TIME");
+        ImGui::Separator();
+        ImGui::Text("Uptime:   %.2f s", totalTime);
+        ImGui::Text("Frame:    %.2f ms", frameMs);
+        ImGui::Text("FPS:      %.1f", ImGui::GetIO().Framerate);
+    }
+    ImGui::End();
+
+    // Render ImGui draw data
+    ImGui::Render();
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
 } // namespace ball_sim

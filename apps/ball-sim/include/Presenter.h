@@ -64,6 +64,7 @@ public:
     ~Presenter() = default;
 
     void presenter_step(const std::vector<core::Ball>& balls, const glm::mat4& projection);
+    void renderSimpleTimeOverlay();
 };
 
 }

@@ -8,18 +8,19 @@
 
 namespace ball_sim {
 
-    // TOD): remove the utility function and make this more robust with the config 
 App::App(int width, int height, std::string_view title)
     : m_window(width, height, title.data()),
       m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 128)) {
     
+    LOG_INFO("Initializing App with window resolution {}x{} and title '{}'", width, height, title);
+    aspectRatio = m_window.getAspectRatio();
     initDefaultScene();
-
-    // TOOD: add logging to this
+    LOG_INFO("App subsystem successfully initialized.");
 }
 
 void App::initDefaultScene() {
-    for(int i = 0; i < 30; ++i) {
+    LOG_INFO("Initializing default scene with 30 balls...");
+    for (int i = 0; i < 30; ++i) {
         addRandomBall();
     }
 }
@@ -36,6 +37,7 @@ void App::processInput() {
     static bool spaceWasPressed = false;
     bool spaceIsPressed = m_window.isKeyPressed(GLFW_KEY_SPACE);
     if (spaceIsPressed && !spaceWasPressed) {
+        LOG_DEBUG("Input action: Applying vertical impulse to all balls.");
         m_world.applyImpulseToAll(m_balls, glm::vec2(0.0f, 5.0f));
     }
     spaceWasPressed = spaceIsPressed;
@@ -44,6 +46,7 @@ void App::processInput() {
     static bool upWasPressed = false;
     bool upIsPressed = m_window.isKeyPressed(GLFW_KEY_UP);
     if (upIsPressed && !upWasPressed) {
+        LOG_DEBUG("Input action: Gravity set to UP.");
         m_world.setGravityDirection(glm::vec2(0.0f, 1.0f));
     }
     upWasPressed = upIsPressed;
@@ -52,6 +55,7 @@ void App::processInput() {
     static bool downWasPressed = false;
     bool downIsPressed = m_window.isKeyPressed(GLFW_KEY_DOWN);
     if (downIsPressed && !downWasPressed) {
+        LOG_DEBUG("Input action: Gravity set to DOWN.");
         m_world.setGravityDirection(glm::vec2(0.0f, -1.0f));
     }
     downWasPressed = downIsPressed;
@@ -60,6 +64,7 @@ void App::processInput() {
     static bool leftWasPressed = false;
     bool leftIsPressed = m_window.isKeyPressed(GLFW_KEY_LEFT);
     if (leftIsPressed && !leftWasPressed) {
+        LOG_DEBUG("Input action: Gravity set to LEFT.");
         m_world.setGravityDirection(glm::vec2(-1.0f, 0.0f));
     }
     leftWasPressed = leftIsPressed;
@@ -68,6 +73,7 @@ void App::processInput() {
     static bool rightWasPressed = false;
     bool rightIsPressed = m_window.isKeyPressed(GLFW_KEY_RIGHT);
     if (rightIsPressed && !rightWasPressed) {
+        LOG_DEBUG("Input action: Gravity set to RIGHT.");
         m_world.setGravityDirection(glm::vec2(1.0f, 0.0f));
     }
     rightWasPressed = rightIsPressed;
@@ -76,6 +82,7 @@ void App::processInput() {
     static bool shiftWasPressed = false;
     bool shiftIsPressed = m_window.isKeyPressed(GLFW_KEY_LEFT_SHIFT) || m_window.isKeyPressed(GLFW_KEY_RIGHT_SHIFT);
     if (shiftIsPressed && !shiftWasPressed) {
+        LOG_DEBUG("Input action: Gravity disabled (set to ZERO).");
         m_world.setGravityDirection(glm::vec2(0.0f, 0.0f));
     }
     shiftWasPressed = shiftIsPressed;
@@ -84,6 +91,7 @@ void App::processInput() {
     static bool cWasPressed = false;
     bool cIsPressed = m_window.isKeyPressed(GLFW_KEY_C);
     if (cIsPressed && !cWasPressed) {
+        LOG_DEBUG("Input action: Clearing all entities (count: {}).", m_balls.size());
         m_balls.clear();
     }
     cWasPressed = cIsPressed;
@@ -92,18 +100,22 @@ void App::processInput() {
     static bool rWasPressed = false;
     bool rIsPressed = m_window.isKeyPressed(GLFW_KEY_R);
     if (rIsPressed && !rWasPressed) {
+        LOG_DEBUG("Input action: Resetting scene.");
         m_balls.clear();
         initDefaultScene();
     }
     rWasPressed = rIsPressed;
 
-    // MOUSE LEFT CLICK: Spawn a new ball at the cursor position
+    // MOUSE LEFT CLICK: Spawn a new ball at cursor position
     static bool mouseWasPressed = false;
     bool mouseIsPressed = m_window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT);
 
     if (mouseIsPressed && !mouseWasPressed) {
         auto [xpos, ypos] = m_window.getCursorPosition();
         glm::vec2 spawnPosition = m_window.screenToWorld(xpos, ypos);
+
+        LOG_DEBUG("Input action: Spawning ball at screen ({:.1f}, {:.1f}) -> world ({:.3f}, {:.3f})", 
+                  xpos, ypos, spawnPosition.x, spawnPosition.y);
 
         addRandomBall(
             /*isStatic=*/std::nullopt,
@@ -117,6 +129,7 @@ void App::processInput() {
 
 void App::addBall(const core::Ball& ball) {
     m_balls.push_back(ball);
+    LOG_TRACE("Added new ball entity [ID: {}]. Total balls: {}", ball.id, m_balls.size());
 }
 
 void App::addRandomBall(
@@ -143,15 +156,21 @@ void App::addRandomBall(
 
     ball.radius      = radius.value_or(distRadius(gen));
     ball.color       = color.value_or(glm::vec4(distColor(gen), distColor(gen), distColor(gen), 1.0f));
-    ball.position    = position.value_or(glm::vec2(distPos(gen)*aspectRatio, distPos(gen)*aspectRatio));
+    ball.position    = position.value_or(glm::vec2(distPos(gen) * aspectRatio, distPos(gen) * aspectRatio));
     ball.velocity    = ball.is_static ? glm::vec2(0.0f) : velocity.value_or(glm::vec2(distVel(gen), distVel(gen)));
     ball.restitution = restitution.value_or(distRest(gen));
+
+    LOG_DEBUG("Constructed random ball: pos=({:.2f}, {:.2f}), radius={:.2f}, mass={:.2f}, static={}", 
+              ball.position.x, ball.position.y, ball.radius, ball.mass, ball.is_static);
 
     addBall(ball);
 }
 
 void App::run() {
-    if (!m_window.isValid()) return;
+    if (!m_window.isValid()) {
+        LOG_ERROR("Cannot run application loop: GLFW window handle is invalid.");
+        return;
+    }
 
     auto [minBounds, maxBounds] = m_window.getWorldBounds();
     glm::mat4 projection = m_window.getProjectionMatrix();
@@ -163,6 +182,9 @@ void App::run() {
         if (m_window.consumeResizeFlag()) {
             std::tie(minBounds, maxBounds) = m_window.getWorldBounds();
             projection = m_window.getProjectionMatrix();
+            aspectRatio = m_window.getAspectRatio();
+            LOG_DEBUG("Window resized. Updated bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
+                      minBounds.x, minBounds.y, maxBounds.x, maxBounds.y);
         }
 
         m_world.world_step(m_balls, minBounds, maxBounds);

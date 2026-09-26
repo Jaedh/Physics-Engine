@@ -1,11 +1,12 @@
 #include "physics/integration/Integrator.h"
+
 #include "core/utils/Logger.h"
 
 namespace physics {
 
 void Integrator::integrateSymplecticEuler(core::Ball& ball, const glm::vec2& gravity, float deltaTime) {
     if (ball.is_static) {
-        LOG_TRACE("Skipping integration for static ball ID {}", ball.id);
+        // LOG_TRACE("Skipping integration for static ball ID {}", ball.id);
         return;
     }
 

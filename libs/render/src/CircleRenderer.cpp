@@ -1,4 +1,5 @@
 #include "render/CircleRenderer.h"
+
 #include "core/utils/Logger.h"
 
 namespace render {
@@ -42,4 +43,4 @@ void CircleRenderer::draw() const {
     glBindVertexArray(0);
 }
 
-}
+} // namespace render

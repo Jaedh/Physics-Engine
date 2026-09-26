@@ -28,7 +28,7 @@ cmake --build --preset ball-sim-release
 ## Roadmap & Work Breakdown
 
 ### Phase 1 — Engine Foundations
-* [ ] **TODO:** Implement structured logging system (required for perf metrics and testing) 
+* [ ] **TODO:** Implement structured perfromance metric system
 * [ ] **TODO:** Modify the initialisation of an App using a JSON structred config
 * [ ] **TODO:** Add a config directory and parse in any of the premade configs, have a default config, a few edge test configs
 * [ ] **TODO:** Add a maximum log level to the config (so debug max would show debug, info, ...)

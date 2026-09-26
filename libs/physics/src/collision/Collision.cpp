@@ -1,7 +1,9 @@
 #include "physics/collision/Collision.h"
+
 #include <algorithm>
 #include <cmath>
 #include <glm/geometric.hpp>
+
 #include "core/utils/Logger.h"
 
 namespace physics {
@@ -20,12 +22,14 @@ void Collision::resolveAABB(core::Ball& ball, glm::vec2 minBounds, glm::vec2 max
         ball.position.x = std::clamp(ball.position.x, minX, maxX);
         ball.velocity.x = -ball.velocity.x * ball.restitution;
         ball.velocity.y *= (1.0f - ball.friction);
+        // LOG_TRACE("Ball ID {} collided with X boundary. Adjusted Pos X={:.3f}", ball.id, ball.position.x);
     }
 
     if (ball.position.y < minY || ball.position.y > maxY) {
         ball.position.y = std::clamp(ball.position.y, minY, maxY);
         ball.velocity.y = -ball.velocity.y * ball.restitution;
         ball.velocity.x *= (1.0f - ball.friction);
+        // LOG_TRACE("Ball ID {} collided with Y boundary. Adjusted Pos Y={:.3f}", ball.id, ball.position.y);
     }
 }
 
@@ -40,7 +44,6 @@ void Collision::resolveCircleToCircle(core::Ball& a, core::Ball& b) {
     glm::vec2 normal = delta / distance;
     float overlap = radiusSum - distance;
 
-    // Use inv_mass ratio for non-static objects (inv_mass == 0 for static objects)
     float totalInvMass = a.inv_mass + b.inv_mass;
     if (totalInvMass == 0.0f) return;
 
@@ -60,7 +63,7 @@ void Collision::resolveCircleToCircle(core::Ball& a, core::Ball& b) {
     a.velocity -= normal * (impulseMagnitude * a.inv_mass);
     b.velocity += normal * (impulseMagnitude * b.inv_mass);
 
-    // LOG_DEBUG("Circle Collision Resolved between Ball ID {} and Ball ID {}, overlap={:.4f}", a.id, b.id, overlap);
+    // LOG_TRACE("Circle Collision Resolved between Ball ID {} and Ball ID {}, overlap={:.4f}", a.id, b.id, overlap);
 }
 
 } // namespace physics

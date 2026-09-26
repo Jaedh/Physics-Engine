@@ -2,15 +2,19 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
 #include <glm/gtc/matrix_transform.hpp>
+
+#include "core/utils/Logger.h"
 
 namespace render {
 
 Window::Window(int width, int height, const char* title)
     : m_width(width), m_height(height), m_baseHeight(static_cast<float>(height)) {
+    
+    LOG_INFO("Initializing GLFW window '{}' ({}x{})...", title, width, height);
+
     if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW\n";
+        LOG_CRITICAL("Failed to initialize GLFW library!");
         return;
     }
 
@@ -20,7 +24,7 @@ Window::Window(int width, int height, const char* title)
 
     m_window = glfwCreateWindow(width, height, title, nullptr, nullptr);
     if (!m_window) {
-        std::cerr << "Failed to create GLFW window\n";
+        LOG_CRITICAL("Failed to create GLFW window context!");
         glfwTerminate();
         return;
     }
@@ -30,17 +34,21 @@ Window::Window(int width, int height, const char* title)
     glfwSetFramebufferSizeCallback(m_window, framebufferSizeCallback);
 
     if (!gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress))) {
-        std::cerr << "Failed to initialize GLAD\n";
+        LOG_CRITICAL("Failed to initialize GLAD OpenGL loader!");
         glfwDestroyWindow(m_window);
         m_window = nullptr;
         glfwTerminate();
         return;
     }
 
-    std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
+    LOG_INFO("OpenGL Context Created Successfully.");
+    LOG_INFO("Vendor:   {}", reinterpret_cast<const char*>(glGetString(GL_VENDOR)));
+    LOG_INFO("Renderer: {}", reinterpret_cast<const char*>(glGetString(GL_RENDERER)));
+    LOG_INFO("Version:  {}", reinterpret_cast<const char*>(glGetString(GL_VERSION)));
 }
 
 Window::~Window() {
+    LOG_INFO("Destroying GLFW Window subsystem.");
     if (m_window) {
         glfwDestroyWindow(m_window);
     }
@@ -68,7 +76,10 @@ GLFWwindow* Window::getNativeWindow() const {
 }
 
 void Window::framebufferSizeCallback(GLFWwindow* window, int width, int height) {
-    if (width == 0 || height == 0) return;
+    if (width == 0 || height == 0) {
+        LOG_WARN("Framebuffer resized to zero dimensions (minimized context).");
+        return;
+    }
     
     glViewport(0, 0, width, height);
     
@@ -77,11 +88,13 @@ void Window::framebufferSizeCallback(GLFWwindow* window, int width, int height) 
         self->m_width = width;
         self->m_height = height;
         self->m_isResized = true;
+        LOG_DEBUG("Framebuffer resized to {}x{}", width, height);
     }
 }
 
 void Window::processInput() {
     if (glfwGetKey(m_window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+        LOG_INFO("Escape key pressed. Flagging window to close.");
         glfwSetWindowShouldClose(m_window, true);
     }
 }
@@ -149,4 +162,4 @@ bool Window::consumeResizeFlag() {
     return temp;
 }
 
-}
+} // namespace render

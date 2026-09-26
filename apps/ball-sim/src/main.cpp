@@ -13,13 +13,19 @@ int main() {
     // LOG_INFO("Initializing Application ({}x{}) Title: '{}'", 
     //          config.window_width, config.window_height, config.window_title);
 
-    ball_sim::App app(800, 800, "Ball Sim");
-
-    LOG_INFO("Application initialized successfully. Entering main loop.");
-    
-    app.run();
+    try {
+        ball_sim::App app(800, 800, "Ball Sim");
+        LOG_INFO("Application initialized successfully. Entering main loop.");
+        
+        app.run();
+    } catch (const std::exception& e) {
+        LOG_CRITICAL("Unhandled exception in main execution thread: {}", e.what());
+    } catch (...) {
+        LOG_CRITICAL("Unknown unhandled exception occurred in main.");
+    }
 
     LOG_INFO("Application shut down cleanly.");
-    core::util::Logger::shutdown(); 
+    core::util::Logger::shutdown();
+    
     return 0;
 }

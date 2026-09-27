@@ -13,6 +13,7 @@ class World {
         float currentFrameTime;
         float lastFrameTime;
         float deltaTime;
+        size_t m_activeCollisions{0};
     public:
         World();
         ~World() = default;
@@ -27,7 +28,7 @@ class World {
         glm::vec2 getGravityDirection() const;
         float getGravityMagnitude() const;
         float getDeltaTime() const;
-
+        size_t getCollisionCount() const;
 };
 
 } // namespace ball_sim

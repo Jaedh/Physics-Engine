@@ -195,7 +195,11 @@ void App::run() {
         }
 
         m_world.world_step(m_balls, minBounds, maxBounds);
-        core::util::Profiler::instance().update(m_world.getDeltaTime());
+        // core::util::Profiler::instance().update(m_world.getDeltaTime());
+        auto& profiler = core::util::Profiler::instance();
+        profiler.update(m_world.getDeltaTime());
+        profiler.setEntityCount(m_balls.size());
+        profiler.setCollisionCount(m_world.getCollisionCount());
 
         m_presenter.presenter_step(m_balls, projection);
         m_metricsOverlay.draw();

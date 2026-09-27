@@ -34,6 +34,7 @@ void World::world_step(std::vector<core::Ball>& m_balls, const glm::vec2& minBou
     }
 
     // 2. Collision resolution phase
+    m_activeCollisions = 0; 
     for (size_t i = 0; i < m_balls.size(); ++i) {
         // Wall / Boundary collision
         physics::Collision::resolveAABB(m_balls[i], minBounds, maxBounds);
@@ -41,6 +42,8 @@ void World::world_step(std::vector<core::Ball>& m_balls, const glm::vec2& minBou
         // Circle-to-Circle collision
         for (size_t j = i + 1; j < m_balls.size(); ++j) {
             physics::Collision::resolveCircleToCircle(m_balls[i], m_balls[j]);
+            m_activeCollisions++;
+            // TODO: add this to the collision function not here
         }
     }
 }
@@ -75,7 +78,10 @@ float World::getGravityMagnitude() const {
 
 float World::getDeltaTime() const { 
     return deltaTime;
- }
+}
 
+ size_t World::getCollisionCount() const { 
+    return m_activeCollisions; 
+}
 
 } // namespace ball_sim

@@ -316,7 +316,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\Window.cpp" />
     <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\Shader.cpp" />
     <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\CircleRenderer.cpp" />
-    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\MetricsOverlay.cpp" />
+    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\gui\MetricsOverlay.cpp" />
+    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\gui\SimulationControlsOverlay.cpp" />
+    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\gui\EntityInspectorPanel.cpp" />
+    <ClCompile Include="C:\Users\Jaedh\Documents\04 STEM\02 Programming\Physics-Engine\libs\render\src\gui\ImGuiContext.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

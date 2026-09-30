@@ -8,7 +8,10 @@
 #include <glm/vec4.hpp>
 
 #include "render/Window.h"
-#include "render/MetricsOverlay.h"
+#include "render/gui/ImGuiContext.h"
+#include "render/gui/MetricsOverlay.h"
+#include "render/gui/SimulationControlsOverlay.h"
+// #include "render/gui/EntityInspectorPanel.h"
 #include "core/objects/Ball.h"
 #include "World.h"
 #include "Presenter.h"
@@ -18,7 +21,10 @@ namespace ball_sim {
 class App {
     private:
         render::Window m_window;
-        render::MetricsOverlay m_metricsOverlay; 
+        render::ImGuiContext m_guiContext;
+        std::shared_ptr<render::MetricsOverlay> m_metricsOverlay;
+        std::shared_ptr<render::SimulationControlsOverlay> m_controlsOverlay;
+        // std::shared_ptr<render::EntityInspectorPanel> m_entityInspectorPanel;
         World m_world;
         Presenter m_presenter;
         std::vector<core::Ball> m_balls;
@@ -39,6 +45,7 @@ class App {
 
         void run();
         void processInput();
+        void processWindowResize();
 
         void addBall(const core::Ball& ball);
         void addRandomBall(

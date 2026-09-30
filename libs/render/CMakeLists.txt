@@ -1,8 +1,11 @@
 add_library(render STATIC
-    src/Window.cpp
+src/Window.cpp
     src/Shader.cpp
     src/CircleRenderer.cpp
-    src/MetricsOverlay.cpp
+    src/gui/MetricsOverlay.cpp
+    src/gui/SimulationControlsOverlay.cpp
+    src/gui/EntityInspectorPanel.cpp
+    src/gui/ImGuiContext.cpp
 )
 
 target_include_directories(render PUBLIC

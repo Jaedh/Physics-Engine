@@ -8,7 +8,6 @@
 #include <imgui_impl_opengl3.h>
 
 #include "core/utils/Logger.h"
-#include "render/MetricsOverlay.h"
 
 namespace ball_sim {
 

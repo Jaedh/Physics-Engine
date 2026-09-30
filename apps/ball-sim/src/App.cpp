@@ -6,7 +6,6 @@
 #include "core/math/CircleGeometry.hpp"
 #include "core/utils/Logger.h"
 #include "core/utils/Profiler.h"
-#include "render/MetricsOverlay.h"
 
 namespace ball_sim {
 
@@ -14,13 +13,21 @@ namespace ball_sim {
     // TODO: Make this intialiser better based on a congif file
 App::App(int width, int height, std::string_view title)
     : m_window(width, height, title.data()),
-      m_metricsOverlay(m_window.getNativeWindow()),
+      m_guiContext(m_window.getNativeWindow()),
+      m_metricsOverlay(std::make_shared<render::MetricsOverlay>()),
+      m_controlsOverlay(std::make_shared<render::SimulationControlsOverlay>()),
+    //   m_entityInspectorPanel(std::make_shared<render::EntityInspectorPanel>()),
       m_presenter(core::math::generateCircleVertices(0.0f, 0.0f, 1.0f, 128)) {
     
     LOG_INFO("Initializing App with window resolution {}x{} and title '{}'", width, height, title);
     
     aspectRatio = m_window.getAspectRatio();
     initDefaultScene();
+
+    m_guiContext.addPanel(m_metricsOverlay);
+    m_guiContext.addPanel(m_controlsOverlay);
+    // m_guiContext.addPanel(m_entityInspectorPanel);
+    // TODO: fix above when the code is ready, add controls to the sim control and entity inspector
     LOG_INFO("App subsystem successfully initialized.");
 }
 
@@ -35,6 +42,8 @@ App::~App() {
     LOG_INFO("Shutting down App subsystem...");
     glfwTerminate();
 }
+
+// TODO: make a controller class to handel inputers and stuff like that
 
 void App::processInput() {
     m_window.processInput();
@@ -113,24 +122,34 @@ void App::processInput() {
     rWasPressed = rIsPressed;
 
     // MOUSE LEFT CLICK: Spawn a new ball at cursor position
-    static bool mouseWasPressed = false;
-    bool mouseIsPressed = m_window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT);
+    // static bool mouseWasPressed = false;
+    // bool mouseIsPressed = m_window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT);
 
-    if (mouseIsPressed && !mouseWasPressed) {
-        auto [xpos, ypos] = m_window.getCursorPosition();
-        glm::vec2 spawnPosition = m_window.screenToWorld(xpos, ypos);
+    // if (mouseIsPressed && !mouseWasPressed) {
+    //     auto [xpos, ypos] = m_window.getCursorPosition();
+    //     glm::vec2 spawnPosition = m_window.screenToWorld(xpos, ypos);
 
-        LOG_DEBUG("Input action: Spawning ball at screen ({:.1f}, {:.1f}) -> world ({:.3f}, {:.3f})", 
-                  xpos, ypos, spawnPosition.x, spawnPosition.y);
+    //     LOG_DEBUG("Input action: Spawning ball at screen ({:.1f}, {:.1f}) -> world ({:.3f}, {:.3f})", 
+    //               xpos, ypos, spawnPosition.x, spawnPosition.y);
 
-        addRandomBall(
-            /*isStatic=*/std::nullopt,
-            /*radius=*/std::nullopt,
-            /*color=*/std::nullopt,
-            /*position=*/spawnPosition
-        );
+    //     addRandomBall(
+    //         /*isStatic=*/std::nullopt,
+    //         /*radius=*/std::nullopt,
+    //         /*color=*/std::nullopt,
+    //         /*position=*/spawnPosition
+    //     );
+    // }
+    // mouseWasPressed = mouseIsPressed;
+}
+
+void App::processWindowResize(){
+    if (m_window.consumeResizeFlag()) {
+        auto [minBounds, maxBounds] = m_window.getWorldBounds();
+        glm::mat4 projection = m_window.getProjectionMatrix();
+        aspectRatio = m_window.getAspectRatio();
+        LOG_DEBUG("Window resized. Updated bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
+                  minBounds.x, minBounds.y, maxBounds.x, maxBounds.y);
     }
-    mouseWasPressed = mouseIsPressed;
 }
 
 void App::addBall(const core::Ball& ball) {
@@ -172,7 +191,6 @@ void App::addRandomBall(
     addBall(ball);
 }
 
-// TODO: Offload some of the logic from the main loop to this function to keep it cleaner
 void App::run() {
     if (!m_window.isValid()) {
         LOG_ERROR("Cannot run application loop: GLFW window handle is invalid.");
@@ -185,24 +203,18 @@ void App::run() {
     LOG_INFO("Entering main application loop.");
     while (!m_window.shouldClose()) { 
         processInput(); 
-
-        if (m_window.consumeResizeFlag()) {
-            std::tie(minBounds, maxBounds) = m_window.getWorldBounds();
-            projection = m_window.getProjectionMatrix();
-            aspectRatio = m_window.getAspectRatio();
-            LOG_DEBUG("Window resized. Updated bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
-                      minBounds.x, minBounds.y, maxBounds.x, maxBounds.y);
-        }
+        processWindowResize();
 
         m_world.world_step(m_balls, minBounds, maxBounds);
-        // core::util::Profiler::instance().update(m_world.getDeltaTime());
+
+        // TODO: wrap this in to a single function call, make this nice
         auto& profiler = core::util::Profiler::instance();
         profiler.update(m_world.getDeltaTime());
         profiler.setEntityCount(m_balls.size());
         profiler.setCollisionCount(m_world.getCollisionCount());
 
         m_presenter.presenter_step(m_balls, projection);
-        m_metricsOverlay.draw();
+        m_guiContext.update();
 
         m_window.swapBuffers(); 
         m_window.pollEvents();

@@ -5,13 +5,6 @@
 int main() {
     core::util::Logger::init();
 
-    // LOG_CRITICAL("TEST CRITICAL");
-    // LOG_ERROR("TEST ERROR");
-    // LOG_WARN("TEST WARN");
-    // LOG_INFO("TEST INFO");
-    // LOG_DEBUG("TEST DEBUG");
-    // LOG_TRACE("TEST TRACE");
-
     LOG_INFO("========================================");
     LOG_INFO("Starting Physics Lab - Ball Sim");
     LOG_INFO("========================================");

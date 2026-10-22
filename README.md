@@ -27,12 +27,18 @@ cmake --build --preset ball-sim-release
 
 ## Roadmap & Work Breakdown
 
-### Phase 1 — Engine Foundations
-* [ ] **TODO:** Modify the initialisation of an App using a JSON structred config
-* [ ] **TODO:** Add a config directory and parse in any of the premade configs, have a default config, a few edge test configs
-* [ ] **TODO:** Add a maximum log level to the config (so debug max would show debug, info, ...)
-* [ ] **TODO:** Allow the configs to be changes based on a arguments being parsed in, like chnage max log level and stuff
-* [ ] **TODO:** Refactor `libs/core` responsibilities (split physics components from render/domain data before contact manifold updates)
+### Phase 1 — Engine Foundations & Input Subsystem
+[ ] TODO: Refactor App constructor to initialize window dimensions, title, gravity, and scene parameters from a JSON structured config file.
+[ ] TODO: Add a config/ directory containing default.json and edge-case test configs (stress_test.json, zero_gravity.json).
+[ ] TODO: Add max_log_level setting to JSON configs (trace, debug, info, warn, error) to control logger verbosity at startup.
+[ ] TODO: Parse command-line flags (e.g., --config <path>, --log-level debug, --width 1280) to override loaded JSON settings dynamically.
+
+
+[ ] TODO: Implement InputController in core::util with dynamic Action callbacks and GLFW key-mapping.
+[ ] TODO: Connect SimulationControlsOverlay directly to InputController so UI buttons and physical hotkeys invoke unified action callbacks.
+[ ] TODO: Parse controller keybindings from JSON configuration files (e.g., assets/config/keybindings.json).
+
+[ ] TODO: Separate physics components from render/domain data before contact manifold updates in libs/core.
 
 ---
 

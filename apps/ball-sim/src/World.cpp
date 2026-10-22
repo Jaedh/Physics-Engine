@@ -2,6 +2,7 @@
 
 #include <glm/vec2.hpp>
 #include <GLFW/glfw3.h>
+#include <glm/geometric.hpp>
 
 #include "physics/integration/Integrator.h"
 #include "physics/collision/Collision.h"
@@ -82,6 +83,17 @@ float World::getDeltaTime() const {
 
  size_t World::getCollisionCount() const { 
     return m_activeCollisions; 
+}
+
+float World::calculateKineticEnergy(const std::vector<core::Ball>& balls) const {
+    float totalEnergy = 0.0f;
+    for (const auto& ball : balls) {
+        if (!ball.is_static) {
+            float speedSq = glm::dot(ball.velocity, ball.velocity);
+            totalEnergy += 0.5f * ball.mass * speedSq;
+        }
+    }
+    return totalEnergy;
 }
 
 } // namespace ball_sim

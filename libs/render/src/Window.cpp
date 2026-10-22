@@ -125,11 +125,19 @@ float Window::getAspectRatio() const {
     return static_cast<float>(m_width) / static_cast<float>(m_height);
 }
 
+std::pair<float, float> Window::getHalfWidthHeight() const {
+    float halfWidth = static_cast<float>(m_width) / (1.0f * m_baseHeight);
+    float halfHeight = static_cast<float>(m_height) / (1.0f * m_baseHeight);
+
+    return { halfWidth, halfHeight };
+}
+
 glm::mat4 Window::getProjectionMatrix() const {
     if (m_height == 0) return glm::mat4(1.0f);
 
-    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
-    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    // float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    // float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    auto [halfWidth, halfHeight] = getHalfWidthHeight();
 
     return glm::ortho(-halfWidth, halfWidth, -halfHeight, halfHeight, -1.0f, 1.0f);
 }
@@ -137,8 +145,9 @@ glm::mat4 Window::getProjectionMatrix() const {
 std::pair<glm::vec2, glm::vec2> Window::getWorldBounds() const {
     if (m_height == 0) return { glm::vec2(-1.0f), glm::vec2(1.0f) };
 
-    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
-    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    // float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    // float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    auto [halfWidth, halfHeight] = getHalfWidthHeight();
 
     return { glm::vec2(-halfWidth, -halfHeight), glm::vec2(halfWidth, halfHeight) };
 }
@@ -146,8 +155,9 @@ std::pair<glm::vec2, glm::vec2> Window::getWorldBounds() const {
 glm::vec2 Window::screenToWorld(double xpos, double ypos) const {
     if (m_width == 0 || m_height == 0) return glm::vec2(0.0f);
 
-    float halfWidth = static_cast<float>(m_width) / m_baseHeight;
-    float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    // float halfWidth = static_cast<float>(m_width) / m_baseHeight;
+    // float halfHeight = static_cast<float>(m_height) / m_baseHeight;
+    auto [halfWidth, halfHeight] = getHalfWidthHeight();
 
     float worldX = ((static_cast<float>(xpos) / m_width) * 2.0f - 1.0f) * halfWidth;
     float worldY = (1.0f - (static_cast<float>(ypos) / m_height) * 2.0f) * halfHeight;

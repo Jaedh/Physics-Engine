@@ -29,6 +29,8 @@ cmake --build --preset ball-sim-release
 
 ### Phase 1 — Engine Foundations & Input Subsystem
 [ ] TODO: Refactor App constructor to initialize window dimensions, title, gravity, and scene parameters from a JSON structured config file.
+[ ] **TODO:** Create a default physics parameter, key binds JSON file
+[ ] **TODO:** Implement JSON + templating system for lightweight app presets (rendering, entity, window config)
 [ ] TODO: Add a config/ directory containing default.json and edge-case test configs (stress_test.json, zero_gravity.json).
 [ ] TODO: Add max_log_level setting to JSON configs (trace, debug, info, warn, error) to control logger verbosity at startup.
 [ ] TODO: Parse command-line flags (e.g., --config <path>, --log-level debug, --width 1280) to override loaded JSON settings dynamically.
@@ -50,6 +52,7 @@ cmake --build --preset ball-sim-release
 * [ ] **TODO:** Implement contact manifold generation and persistent contact resolution (positional slop / stabilization to fix jitter)
 
 ---
+
 * [ ] **TODO:** Do a gitingest re-architect
 
 ---
@@ -61,16 +64,11 @@ cmake --build --preset ball-sim-release
 
 ---
 
-### Phase 4 — Data-Driven Configuration
-* [ ] **TODO:** Create a default physics parameter JSON file
-* [ ] **TODO:** Implement JSON + templating system for lightweight app presets (rendering, entity, window config)
-
----
-
-### Phase 5 — Interactivity & UI Polish
+### Phase 4 — Interactivity & UI Polish
 * [ ] **TODO:** Integrate ImGui controls for runtime tweaks, spawning, and performance metric overlays
 * [ ] **TODO:** Refactor input handling system in `App` to eliminate duplicate edge-detection logic
 * [ ] **TODO:** Implement mouse object selection, dragging, and throwing
 * [ ] **TODO:** Add simulation state controls (pause, single frame step, speed multiplier)
-* [ ] **TODO:** Resolve gravity control key-binding strategy and implement polar coordinate gravity space (<kbd>Shift</kbd> toggle)
+* [ ] **TODO:** Resolve gravity control key-binding strategy and implement polar coordinate gravity
+* [ ] **TODO:** Add simulation gravity controls (gravity magnitude 0 - 20 ish, director, polar or cartisian toggle)
 * [ ] **TODO:** Support smooth camera pan and zoom operations via uniform transformations in `Presenter`

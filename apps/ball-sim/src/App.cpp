@@ -21,7 +21,13 @@ App::App(int width, int height, std::string_view title)
     
     LOG_INFO("Initializing App with window resolution {}x{} and title '{}'", width, height, title);
     
-    aspectRatio = m_window.getAspectRatio();
+    m_aspectRatio = m_window.getAspectRatio();
+    std::tie(m_minBounds, m_maxBounds) = m_window.getWorldBounds();
+    m_projection = m_window.getProjectionMatrix();
+
+    LOG_INFO("App subsystem initialized with aspect ratio {:.2f}, bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
+             m_aspectRatio, m_minBounds.x, m_minBounds.y, m_maxBounds.x, m_maxBounds.y);
+
     initDefaultScene();
 
     m_guiContext.addPanel(m_metricsOverlay);
@@ -29,13 +35,6 @@ App::App(int width, int height, std::string_view title)
     // m_guiContext.addPanel(m_entityInspectorPanel);
     // TODO: fix above when the code is ready, add controls to the sim control and entity inspector
     LOG_INFO("App subsystem successfully initialized.");
-}
-
-void App::initDefaultScene() {
-    LOG_INFO("Initializing default scene with 30 balls...");
-    for (int i = 0; i < 30; ++i) {
-        addRandomBall();
-    }
 }
 
 App::~App() {
@@ -144,11 +143,29 @@ void App::processInput() {
 
 void App::processWindowResize(){
     if (m_window.consumeResizeFlag()) {
-        auto [minBounds, maxBounds] = m_window.getWorldBounds();
-        glm::mat4 projection = m_window.getProjectionMatrix();
-        aspectRatio = m_window.getAspectRatio();
-        LOG_DEBUG("Window resized. Updated bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
-                  minBounds.x, minBounds.y, maxBounds.x, maxBounds.y);
+        std::tie(m_minBounds, m_maxBounds) = m_window.getWorldBounds();
+        m_projection = m_window.getProjectionMatrix();
+        m_aspectRatio = m_window.getAspectRatio();
+        
+        LOG_DEBUG("Window resized (aspect: {:.2f}). Updated bounds min=({:.2f}, {:.2f}), max=({:.2f}, {:.2f})", 
+                m_aspectRatio, m_minBounds.x, m_minBounds.y, m_maxBounds.x, m_maxBounds.y);
+    }
+}
+
+void App::processProfiler() {
+    auto& profiler = core::util::Profiler::instance();
+    profiler.update(m_world.getDeltaTime());
+    profiler.setEntityCount(m_balls.size());
+    profiler.setCollisionCount(m_world.getCollisionCount());
+    profiler.setSystemKineticEnergy(m_world.calculateKineticEnergy(m_balls));
+}
+
+// UPDATE THE FOLLOWING IN THE NEXT VERSION:
+
+void App::initDefaultScene() {
+    LOG_INFO("Initializing default scene with 30 balls...");
+    for (int i = 0; i < 30; ++i) {
+        addRandomBall();
     }
 }
 
@@ -181,7 +198,7 @@ void App::addRandomBall(
 
     ball.radius      = radius.value_or(distRadius(gen));
     ball.color       = color.value_or(glm::vec4(distColor(gen), distColor(gen), distColor(gen), 1.0f));
-    ball.position    = position.value_or(glm::vec2(distPos(gen) * aspectRatio, distPos(gen) * aspectRatio));
+    ball.position    = position.value_or(glm::vec2(distPos(gen) * m_aspectRatio, distPos(gen) * m_aspectRatio));
     ball.velocity    = ball.is_static ? glm::vec2(0.0f) : velocity.value_or(glm::vec2(distVel(gen), distVel(gen)));
     ball.restitution = restitution.value_or(distRest(gen));
 
@@ -191,29 +208,26 @@ void App::addRandomBall(
     addBall(ball);
 }
 
+// UPDATE THE ABOVE IN THE NEXT VERSION
+
+
 void App::run() {
     if (!m_window.isValid()) {
         LOG_ERROR("Cannot run application loop: GLFW window handle is invalid.");
         return;
     }
 
-    auto [minBounds, maxBounds] = m_window.getWorldBounds();
-    glm::mat4 projection = m_window.getProjectionMatrix();
-
     LOG_INFO("Entering main application loop.");
     while (!m_window.shouldClose()) { 
         processInput(); 
         processWindowResize();
 
-        m_world.world_step(m_balls, minBounds, maxBounds);
+        m_world.world_step(m_balls, m_minBounds, m_maxBounds);
 
-        // TODO: wrap this in to a single function call, make this nice
-        auto& profiler = core::util::Profiler::instance();
-        profiler.update(m_world.getDeltaTime());
-        profiler.setEntityCount(m_balls.size());
-        profiler.setCollisionCount(m_world.getCollisionCount());
+        // TODO: try and  instantiate the profiler in app
+        processProfiler();
 
-        m_presenter.presenter_step(m_balls, projection);
+        m_presenter.presenter_step(m_balls, m_projection);
         m_guiContext.update();
 
         m_window.swapBuffers(); 

@@ -24,11 +24,12 @@ class World {
         
         void setGravityDirection(const glm::vec2& direction);
         void setGravityMagnitude(float magnitude);
-
         glm::vec2 getGravityDirection() const;
         float getGravityMagnitude() const;
+
         float getDeltaTime() const;
         size_t getCollisionCount() const;
+        float calculateKineticEnergy(const std::vector<core::Ball>& balls) const;
 };
 
 } // namespace ball_sim

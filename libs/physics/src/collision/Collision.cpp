@@ -8,10 +8,6 @@
 
 namespace physics {
 
-void Collision::resolveAABB(core::Ball& ball, float aspectRatio) {
-    resolveAABB(ball, glm::vec2(-aspectRatio, -1.0f), glm::vec2(aspectRatio, 1.0f));
-}
-
 void Collision::resolveAABB(core::Ball& ball, glm::vec2 minBounds, glm::vec2 maxBounds) {
     const float minX = minBounds.x + ball.radius;
     const float maxX = maxBounds.x - ball.radius;

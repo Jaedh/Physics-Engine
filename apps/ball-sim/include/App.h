@@ -30,22 +30,20 @@ class App {
         std::vector<core::Ball> m_balls;
 
         float m_lastFrameTime{0.0f};
-        float aspectRatio{1.0f};
 
-        float intial_width{800.0f};
-        float intial_height{800.0f};
+        float m_initial_width{800.0f};
+        float m_initial_height{800.0f};
+
+        glm::vec2 m_minBounds{0.0f, 0.0f};
+        glm::vec2 m_maxBounds{0.0f, 0.0f};
+        glm::mat4 m_projection{1.0f};
+        float m_aspectRatio{1.0f};
 
         void initDefaultScene();
-    public:
-        App(int width, int height, std::string_view title);
-        ~App();
 
-        App(const App&) = delete;
-        App& operator=(const App&) = delete;
-
-        void run();
         void processInput();
         void processWindowResize();
+        void processProfiler();
 
         void addBall(const core::Ball& ball);
         void addRandomBall(
@@ -56,6 +54,15 @@ class App {
             std::optional<glm::vec2> velocity = std::nullopt,
             std::optional<float> restitution = std::nullopt
         );
+    public:
+        App(int width, int height, std::string_view title);
+        ~App();
+
+        App(const App&) = delete;
+        App& operator=(const App&) = delete;
+
+        void run();
+
 };
 
 } 

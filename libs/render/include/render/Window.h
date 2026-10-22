@@ -40,6 +40,7 @@ public:
     std::pair<int, int> getDimensions() const;
 
     float getAspectRatio() const;
+    std::pair<float, float> getHalfWidthHeight() const;
     glm::mat4 getProjectionMatrix() const;
     std::pair<glm::vec2, glm::vec2> getWorldBounds() const;
     glm::vec2 screenToWorld(double xpos, double ypos) const;

@@ -15,6 +15,7 @@ void MetricsOverlay::draw() {
     static float displayFrameMs = 0.0f;
     static float display1LowMs = 0.0f;
     static float displayMaxMs = 0.0f;
+    static float displayEnergyJ = 0.0f;
     static float lastUpdateTime = 0.0f;
 
     float currentTime = static_cast<float>(glfwGetTime());
@@ -25,6 +26,7 @@ void MetricsOverlay::draw() {
         displayFrameMs = profiler.getFrameTimeMs();
         display1LowMs = profiler.get1PercentLowMs();
         displayMaxMs = profiler.getMaxFrameTimeMs();
+        displayEnergyJ = profiler.getSystemKineticEnergy();
         lastUpdateTime = currentTime;
     }
 
@@ -68,6 +70,10 @@ void MetricsOverlay::draw() {
         ImGui::Separator();
         ImGui::Text("Total Balls:  %zu", profiler.getEntityCount());
         ImGui::Text("Contacts:     %zu", profiler.getCollisionCount());
+        // ImGui::Text("Physics Steps: %d", profiler.getPhysicsSubsteps());
+        // ImGui::Text("Broadphase:   %.2f ms", profiler.getBroadphaseTimeMs());
+        // ImGui::Text("Narrowphase:  %.2f ms", profiler.getNarrowphaseTimeMs());
+        ImGui::Text("Total Energy: %.2f J", displayEnergyJ);
 
         ImGui::Spacing();
 
